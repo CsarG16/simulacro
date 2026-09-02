@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Simulador de Exámenes • Editorial Minimalist</title>
+  <meta name="description" content="Simulador de preguntas y exámenes con estética editorial oscura, soporte para respuestas múltiples y verificación AJAX.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- Editorial Top Metadata (Inspired by Reference Design) -->
+  <header class="editorial-masthead">
+    <div class="meta-block">
+      <span class="meta-label">PROJECT</span>
+      <h1 class="meta-headline">A SIMULATOR SYSTEM</h1>
+      <span class="meta-sub">INTERACTIVE DRILL • 2026</span>
+    </div>
+
+    <div class="editorial-spec-bar">
+      <div class="spec-item">
+        <span class="spec-label">TYPOGRAPHY</span>
+        <span class="spec-value">SYNE / JAKARTA</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">THEME</span>
+        <button id="themeToggleBtn" class="theme-spec-btn" title="Alternar tema" aria-label="Cambiar tema">
+          <span class="color-swatch"></span>
+          <i data-feather="sun" id="themeIcon" style="display:none;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    
+    <!-- ====================================================================
+         SCREEN 1: CONFIGURATION (.01)
+         ==================================================================== -->
+    <main id="screenConfig" class="screen active">
+      <div class="showcase-block">
+        <div class="showcase-index">.01</div>
+
+        <div class="viewport-card">
+          <!-- Viewport Top Bar -->
+          <div class="viewport-header">
+            <div class="brand-monogram">
+              <span class="mono-bold">SI</span>
+              <span class="mono-light">MU</span>
+            </div>
+            <div class="viewport-nav-links">
+              <span>CONFIG</span>
+              <span>PREGUNTAS</span>
+            </div>
+          </div>
+
+          <!-- Card Hero Content -->
+          <div class="hero-section">
+            <span class="hero-eyebrow">// BIENVENIDO</span>
+            <h2 class="hero-main-title">SIMULACRO</h2>
+            <p class="hero-subtitle">SISTEMA DINÁMICO DE EVALUACIÓN Y PRÁCTICA</p>
+          </div>
+
+          <!-- Configuration Grid -->
+          <div class="editorial-form">
+            <div class="form-grid">
+              <!-- Materia -->
+              <div class="form-field">
+                <label for="selectCategory">MATERIA / CATEGORÍA</label>
+                <div class="input-wrapper">
+                  <select id="selectCategory" class="editorial-select">
+                    <option value="todas">Todas las materias</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Cantidad -->
+              <div class="form-field">
+                <label for="selectQuantity">CANTIDAD DE PREGUNTAS</label>
+                <div class="input-wrapper">
+                  <select id="selectQuantity" class="editorial-select">
+                    <option value="5">5 PREGUNTAS (EXPRÉS)</option>
+                    <option value="10">10 PREGUNTAS</option>
+                    <option value="20">20 PREGUNTAS</option>
+                    <option value="30">30 PREGUNTAS</option>
+                    <option value="40">40 PREGUNTAS</option>
+                    <option value="50">50 PREGUNTAS</option>
+                    <option value="all" selected>TODAS LAS DISPONIBLES (60)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Tiempo -->
+              <div class="form-field">
+                <label for="selectTime">LÍMITE DE TIEMPO</label>
+                <div class="input-wrapper">
+                  <select id="selectTime" class="editorial-select">
+                    <option value="0">SIN LÍMITE</option>
+                    <option value="3">3 MINUTOS</option>
+                    <option value="5" selected>5 MINUTOS</option>
+                    <option value="10">10 MINUTOS</option>
+                    <option value="15">15 MINUTOS</option>
+                    <option value="20">20 MINUTOS</option>
+                    <option value="30">30 MINUTOS</option>
+                    <option value="45">45 MINUTOS</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Orden -->
+              <div class="form-field">
+                <label for="selectShuffle">ORDEN DE PREGUNTAS</label>
+                <div class="input-wrapper">
+                  <select id="selectShuffle" class="editorial-select">
+                    <option value="yes" selected>ALEATORIO (MEZCLAR)</option>
+                    <option value="no">SECUENCIAL</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modalidad Selector -->
+            <div class="mode-selector-block">
+              <label class="section-label">MODALIDAD DE EVALUACIÓN</label>
+              <div class="mode-selector-editorial">
+                <div class="mode-option active" data-mode="exam">
+                  <div class="mode-code">01</div>
+                  <div class="mode-info">
+                    <span class="mode-name">MODO EXAMEN</span>
+                    <span class="mode-desc">Responde con temporizador y revisa el informe completo al terminar.</span>
+                  </div>
+                </div>
+                <div class="mode-option" data-mode="practice">
+                  <div class="mode-code">02</div>
+                  <div class="mode-info">
+                    <span class="mode-name">MODO PRÁCTICA</span>
+                    <span class="mode-desc">Verificación interactiva inmediata por pregunta con detección de faltantes.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start Action Button -->
+            <div class="action-footer">
+              <button id="btnStartQuiz" class="btn-editorial-primary">
+                <span>INICIAR SIMULACRO</span>
+                <i data-feather="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Viewport Scroll Indicator -->
+          <div class="viewport-side-tag">SCROLL —</div>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- ====================================================================
+         SCREEN 2: ACTIVE QUIZ (.02)
+         ==================================================================== -->
+    <section id="screenQuiz" class="screen">
+      <div class="showcase-block">
+        <div class="showcase-index">.02</div>
+
+        <div class="viewport-card">
+          <!-- Viewport Top Bar -->
+          <div class="viewport-header">
+            <div class="brand-monogram">
+              <span class="mono-bold">SI</span>
+              <span class="mono-light">MU</span>
+            </div>
+            
+            <div class="viewport-center-meta">
+              <span id="badgeCategory" class="editorial-badge">MATERIA</span>
+              <span id="badgeType" style="display: none;"></span>
+            </div>
+
+            <div id="timerBox" class="editorial-timer">
+              <span class="timer-dot"></span>
+              <span id="timerText">05:00</span>
+            </div>
+          </div>
+
+          <!-- Progress Bar Line -->
+          <div class="editorial-progress-bar">
+            <div class="progress-details">
+              <span id="questionCounterText">PREGUNTA 1 DE 8</span>
+              <span id="progressPercentText">12% COMPLETADO</span>
+            </div>
+            <div class="progress-track-line">
+              <div id="progressFill" class="progress-indicator-line"></div>
+            </div>
+          </div>
+
+          <!-- Question Content -->
+          <div class="question-editorial-body">
+            <h2 id="questionText" class="editorial-question-prompt">Enunciado de la pregunta</h2>
+            <p id="questionInstruction" class="editorial-instruction">
+              <span class="prompt-arrow">→</span>
+              <span>Marca tu(s) alternativa(s)</span>
+            </p>
+          </div>
+
+          <!-- Options Container -->
+          <div id="optionsList" class="editorial-options-list">
+            <!-- Dynamic Options Rendered via JS -->
+          </div>
+
+          <!-- AJAX Verification Action Box -->
+          <div class="editorial-verify-container">
+            <button id="btnVerifyAnswer" class="btn-editorial-verify" type="button">
+              <i data-feather="check-circle" id="verifyIcon"></i>
+              <span id="btnVerifyText">VERIFICAR RESPUESTA</span>
+              <span id="verifySpinner" class="editorial-spinner" style="display: none;"></span>
+            </button>
+            <span id="verifyHint" class="editorial-verify-hint">Comprueba tu respuesta sin recargar la página</span>
+          </div>
+
+          <!-- Dynamic AJAX Verification Feedback Box -->
+          <div id="practiceFeedback" class="editorial-feedback-box" style="display: none;">
+            <div id="practiceFeedbackHeader" class="feedback-editorial-title"></div>
+            <div id="practiceFeedbackBody" class="feedback-editorial-content"></div>
+          </div>
+
+          <!-- Navigation Controls -->
+          <div class="editorial-nav-bar">
+            <div class="nav-cluster-left">
+              <button id="btnPrev" class="btn-editorial-secondary">
+                <i data-feather="arrow-left"></i>
+                <span>ANTERIOR</span>
+              </button>
+              <button id="btnNext" class="btn-editorial-secondary">
+                <span>SIGUIENTE</span>
+                <i data-feather="arrow-right"></i>
+              </button>
+            </div>
+
+            <div class="nav-cluster-right">
+              <button id="btnFinishQuiz" class="btn-editorial-finish">
+                <span>FINALIZAR</span>
+                <i data-feather="check"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Question Navigation Map / Palette -->
+          <div class="editorial-map-drawer">
+            <div class="map-drawer-header">
+              <span class="drawer-title">MAPA DE PREGUNTAS</span>
+              <span id="paletteSummary" class="drawer-counter">0 DE 8 RESPONDIDAS</span>
+            </div>
+            <div id="paletteGrid" class="editorial-palette-grid">
+              <!-- Dynamically populated buttons -->
+            </div>
+          </div>
+
+          <!-- Viewport Scroll Indicator -->
+          <div class="viewport-side-tag">EVALUANDO —</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         SCREEN 3: RESULTS & DETAILED REVIEW (.03)
+         ==================================================================== -->
+    <section id="screenResults" class="screen">
+      <div class="showcase-block">
+        <div class="showcase-index">.03</div>
+
+        <div class="viewport-card">
+          <!-- Viewport Top Bar -->
+          <div class="viewport-header">
+            <div class="brand-monogram">
+              <span class="mono-bold">SI</span>
+              <span class="mono-light">MU</span>
+            </div>
+            <div class="viewport-nav-links">
+              <span>RESULTADOS</span>
+              <span>INFORME</span>
+            </div>
+          </div>
+
+          <!-- Score Hero Banner -->
+          <div class="results-hero">
+            <span class="results-eyebrow">// INFORME FINAL</span>
+            <div class="score-display-block">
+              <h2 id="resScorePercent" class="editorial-big-score">85%</h2>
+              <span id="resScoreFraction" class="editorial-fraction-score">7 / 8 PTS</span>
+            </div>
+            <h3 id="resTitle" class="results-headline">SIMULACRO COMPLETADO</h3>
+            <p id="resFeedbackMsg" class="results-subtext">Excelente rendimiento en la sesión evaluativa.</p>
+          </div>
+
+          <!-- Editorial Stats Table / Grid -->
+          <div class="editorial-stats-row">
+            <div class="stat-card">
+              <span class="stat-index">01</span>
+              <div id="statPerfect" class="stat-number success">0</div>
+              <span class="stat-label">100% CORRECTAS</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-index">02</span>
+              <div id="statPartial" class="stat-number warning">0</div>
+              <span class="stat-label">CON FALTANTES ⚠️</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-index">03</span>
+              <div id="statWrong" class="stat-number danger">0</div>
+              <span class="stat-label">INCORRECTAS</span>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="results-action-row">
+            <button id="btnRestartQuiz" class="btn-editorial-primary">
+              <i data-feather="rotate-ccw"></i>
+              <span>REPETIR SIMULACRO</span>
+            </button>
+            <button id="btnNewQuiz" class="btn-editorial-secondary">
+              <i data-feather="home"></i>
+              <span>NUEVA CONFIGURACIÓN</span>
+            </button>
+          </div>
+
+          <!-- Detailed Review Section -->
+          <div class="editorial-review-container">
+            <div class="review-header-bar">
+              <h3 class="review-section-headline">DESGLOSE DETALLADO</h3>
+              <div class="editorial-filter-tabs">
+                <button class="filter-tab active" data-filter="all">TODAS</button>
+                <button class="filter-tab" data-filter="perfect">CORRECTAS</button>
+                <button class="filter-tab" data-filter="partial">FALTARON OPCIONES ⚠️</button>
+                <button class="filter-tab" data-filter="wrong">INCORRECTAS</button>
+              </div>
+            </div>
+
+            <div id="reviewList" class="editorial-review-list">
+              <!-- Dynamically populated review items -->
+            </div>
+          </div>
+
+          <!-- Viewport Scroll Indicator -->
+          <div class="viewport-side-tag">RESUMEN —</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Minimalist Confirmation Modal -->
+  <div id="confirmModal" class="editorial-modal-backdrop">
+    <div class="editorial-modal-box">
+      <span class="modal-index">// ATENCIÓN</span>
+      <h3 id="modalTitle" class="editorial-modal-title">¿FINALIZAR SIMULACRO?</h3>
+      <p id="modalDesc" class="editorial-modal-desc">Tienes preguntas sin responder. ¿Deseas entregar el examen ahora?</p>
+      <div class="modal-btn-row">
+        <button id="modalBtnCancel" class="btn-editorial-secondary">VOLVER A PREGUNTAS</button>
+        <button id="modalBtnConfirm" class="btn-editorial-finish">ENTREGAR EXAMEN</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer End Note (Inspired by "THANKS FOR WATCHING!" in the image) -->
+  <footer class="editorial-footer">
+    <span class="footer-label">SIMULATEST • ENGINE</span>
+    <p class="footer-credit">EVALUACIÓN DIDÁCTICA INTERACTIVA</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="preguntas.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if (window.feather) feather.replace();
+  </script>
+</body>
+</html>

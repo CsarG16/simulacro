@@ -1,0 +1,1054 @@
+const bancoPreguntas = [
+  {
+    "id": 1,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) es(son) función(es) gerencial(es) básica(s) que compone(n) el proceso administrativo?",
+    "opciones": [
+      "Planear",
+      "Organizar",
+      "Integrar el personal (Staffing)",
+      "Controlar",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "Koontz y Weihrich establecen cinco funciones gerenciales esenciales en las que se organiza el conocimiento administrativo: planear, organizar, integrar el personal, dirigir y controlar."
+  },
+  {
+    "id": 2,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) considerado(s) el padre de la administración moderna debido a la postulación de los 14 principios administrativos y la sistematización de la teoría operacional:",
+    "opciones": [
+      "Frederick Winslow Taylor",
+      "Elton Mayo",
+      "Max Weber",
+      "Chester Barnard",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      4
+    ],
+    "explicacion": "Henri Fayol es universalmente reconocido en el texto como el padre de la teoría de la administración moderna. Al no figurar entre las opciones A, B, C ni D, la respuesta correcta es 'Ninguna de las anteriores'."
+  },
+  {
+    "id": 3,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes preceptos corresponde(n) a los principios fundamentales de la administración científica formulados por Frederick W. Taylor?",
+    "opciones": [
+      "Reemplazar las reglas empíricas por ciencia y conocimiento organizado",
+      "Lograr armonía y cooperación de grupo, más que discordia o individualismo caótico",
+      "Trabajar para obtener la máxima producción, en lugar de una producción restringida",
+      "Establecer la codeterminación obrero-patronal en el consejo directivo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Taylor fundamentó su enfoque científico en cuatro preceptos clave: ciencia en vez de empirismo, armonía grupal, producción máxima y desarrollo pleno del trabajador. La codeterminación es una práctica laboral institucional propia de Alemania, no de Taylor."
+  },
+  {
+    "id": 4,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la noción de administrar como ciencia o arte, ¿cuál(es) afirmación(es) es(son) conceptualmente correcta(s)?",
+    "opciones": [
+      "La práctica de la administración constituye propiamente un arte",
+      "El conocimiento organizado y sistemático que subyace a la práctica administrativa constituye una ciencia",
+      "La ciencia y el arte en la administración son mutuamente excluyentes y antagónicos",
+      "La ciencia de la administración es exacta e invariable al igual que la física pura",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1
+    ],
+    "explicacion": "Administrar como práctica aplicada es un arte (know-how), mientras que el corpus de conocimiento organizado que respalda dicha práctica es una ciencia. Ambos se complementan mutuamente y la ciencia gerencial dista de ser exacta debido a la complejidad de las variables humanas."
+  },
+  {
+    "id": 5,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes elementos constituye(n) insumo(s) del modelo sistémico del proceso administrativo?",
+    "opciones": [
+      "Recursos humanos, de capital e infraestructura",
+      "Habilidades gerenciales, conocimientos y competencias técnicas",
+      "Demandas y expectativas de los solicitantes (empleados, consumidores, accionistas, gobierno)",
+      "Bienes terminados, servicios y utilidades netas generadas",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Los insumos provienen del ambiente externo e integran recursos físicos/humanos, capital, capacidades gerenciales y las solicitudes legítimas de los grupos de interés. Los bienes, servicios y utilidades corresponden a los resultados o productos (outputs) del sistema."
+  },
+  {
+    "id": 6,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) la(s) conclusión(es) fundamental(es) obtenida(s) en los célebres estudios desarrollados por Elton Mayo y F. J. Roethlisberger en la planta Hawthorne:",
+    "opciones": [
+      "La iluminación física y la temperatura ambiental determinan de forma directa y lineal el nivel de fatiga laboral",
+      "Los incentivos puramente económicos son el único factor que estimula la productividad del obrero",
+      "La productividad mejora sustancialmente debido a factores sociales, relaciones de grupo y el reconocimiento interpersonal",
+      "El establecimiento formal de tiempos y movimientos elimina los tiempos muertos en la línea de ensamble",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      2
+    ],
+    "explicacion": "El efecto Hawthorne demostró que las relaciones sociales, el sentido de pertenencia al grupo y la atención de la gerencia hacia las necesidades humanas inciden más en la productividad que los cambios meramente físicos o fisiológicos."
+  },
+  {
+    "id": 7,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "En el modelo de análisis gerencial de Henry Mintzberg, ¿cuál(es) función(es) o rol(es) pertenece(n) a la categoría de roles de decisión?",
+    "opciones": [
+      "Rol de emprendedor",
+      "Rol de líder",
+      "Rol de asignador de recursos",
+      "Rol de negociador",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      2,
+      3
+    ],
+    "explicacion": "Mintzberg agrupa diez funciones: los roles decisorios son emprendedor, manejador de disturbios, asignador de recursos y negociador. El rol de líder corresponde a la categoría interpersonal."
+  },
+  {
+    "id": 8,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) condición(es) o postulado(s) que define(n) a una 'sociedad plural' donde operan las empresas contemporáneas:",
+    "opciones": [
+      "Existe un monopolio estatal absoluto sobre la asignación de recursos",
+      "Muchos grupos organizados representan intereses divergentes y ninguno ejerce un poder total desmedido",
+      "La fuerza laboral carece de representación social o sindical",
+      "Todos los grupos de interés poseen idénticos objetivos y prioridades operativas",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1
+    ],
+    "explicacion": "Una sociedad plural es aquella donde diversos grupos organizados defienden intereses propios y se influyen mutuamente sin que una sola entidad concentre un poder tiránico o desmedido, obligando al administrador a conciliar metas divergentes."
+  },
+  {
+    "id": 9,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) factor(es) forma(n) parte del ambiente externo general que influye en la organización?",
+    "opciones": [
+      "Entorno ecológico y tecnológico",
+      "Entorno económico y social",
+      "Entorno ético y político-legal",
+      "Estructura departamental interna",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "El ambiente externo de la organización se clasifica en los factores económicos, tecnológicos, sociales, ecológicos, éticos y político-legales. La estructura departamental interna es una variable del sistema organizacional interno, no de su entorno."
+  },
+  {
+    "id": 10,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) mecanismo(s) o figura(s) institucional(es) orientada(s) a facilitar la aplicación de la ética y proteger la libre revelación de irregularidades organizacionales:",
+    "opciones": [
+      "Comités y líneas directas de denuncia confidencial",
+      "La figura del ombudsman institucional para investigar inquietudes internas",
+      "Códigos de ética formalmente promulgados",
+      "Directrices de auditoría externa y protección legal al denunciante (whistleblower)",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "Para institucionalizar la ética, los autores señalan la efectividad de códigos formales de conducta, el nombramiento de un ombudsman, comités éticos y sistemas estructurados de protección a denunciantes de abusos o ilegalidades."
+  },
+  {
+    "id": 11,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) orientación(es) gerencial(es) en la cual las subsidiarias en el extranjero cuentan con amplia autonomía administrativa bajo la premisa de que el personal local comprende mejor las condiciones locales:",
+    "opciones": [
+      "Orientación etnocéntrica",
+      "Orientación geocéntrica",
+      "Orientación regiocéntrica",
+      "Orientación centralizada de matriz",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      4
+    ],
+    "explicacion": "La descripción teórica corresponde formalmente a la 'Orientación policéntrica'. Dado que dicha alternativa no figura explícitamente entre las opciones presentadas, la respuesta correcta es 'Ninguna de las anteriores'."
+  },
+  {
+    "id": 12,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de las siguientes constituye(n) una de las dimensiones culturales del comportamiento social identificadas por Geert Hofstede?",
+    "opciones": [
+      "Individualismo frente a colectivismo",
+      "Distanciamiento del poder contra acercamiento a éste",
+      "Tolerancia a la incertidumbre frente a su evasión",
+      "Masculinidad frente a feminidad",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El modelo original de Geert Hofstede estableció estas cuatro dimensiones nodales del comportamiento cultural organizacional, complementadas posteriormente por la orientación a largo plazo frente a corto plazo."
+  },
+  {
+    "id": 13,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la orientación geocéntrica en corporaciones multinacionales, ¿cuál(es) premisa(s) es(son) verdadera(s)?",
+    "opciones": [
+      "La corporación en su totalidad se percibe como un sistema interdependiente de alcance mundial",
+      "La comunicación entre la matriz y las subsidiarias fluye en dos sentidos de forma colaborativa",
+      "Las prácticas extranjeras se basan únicamente en las costumbres impuestas por la sede matriz",
+      "Las fuentes de talento administrativo se seleccionan con base en una bolsa de trabajo estrictamente nacional",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1
+    ],
+    "explicacion": "La perspectiva geocéntrica opera globalmente considerando la interdependencia con flujo bidireccional y talento mundial. Replicar sólo las costumbres de la sede central y reclutar de forma local/nacional caracteriza al enfoque etnocéntrico."
+  },
+  {
+    "id": 14,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) término(s) con que Harold Koontz denominó la proliferación dispersa de enfoques, métodos e interpretaciones metodológicas del pensamiento gerencial:",
+    "opciones": [
+      "Archipiélago epistemológico",
+      "La jungla de la teoría de la administración",
+      "Dilema metodológico contemporáneo",
+      "Enfoque de dispersión operacional",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1
+    ],
+    "explicacion": "Koontz acuñó el clásico concepto 'La jungla de la teoría de la administración' para referirse a la fragmentación académica y la confusión terminológica producida por autores con disciplinas diversas."
+  },
+  {
+    "id": 15,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "En el marco de las diferencias en administración internacional, ¿cuál(es) proposición(es) sobre las prácticas gerenciales por país es(son) técnicamente correcta(s)?",
+    "opciones": [
+      "El modelo de conglomerados surcoreano caracterizado por estrecha cooperación estatal se denomina Chaebol",
+      "En Alemania, la autoridad de los administradores y la estructura de decisión se ven formalmente influidas por el concepto de codeterminación",
+      "En Francia, la planeación gubernamental tiene un peso e influencia significativa sobre los planes de las corporaciones privadas",
+      "El término 'Inhwa' en la administración de Corea del Sur refiere formalmente al concepto cultural y organizacional de armonía",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "Todas las afirmaciones corresponden con exactitud al marco teórico del Capítulo 3 sobre administración comparada: chaebol e inhwa en Corea del Sur, la codeterminación alemana y la influencia de la planeación indicativa estatal francesa."
+  },
+  {
+    "id": 16,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) considerado(s) autor(es) y colaborador(es) destacado(s) de la teoría de la calidad y su gestión operacional en las organizaciones:",
+    "opciones": [
+      "W. Edwards Deming",
+      "Joseph M. Juran",
+      "Philip B. Crosby",
+      "Hugo Münsterberg",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Deming, Juran y Crosby son citados como los principales teóricos y precursores del movimiento de la calidad. Münsterberg es pionero en la aplicación de la psicología industrial y las ciencias del comportamiento."
+  },
+  {
+    "id": 17,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de las siguientes corresponde(n) a las cuatro dimensiones o factores determinantes de la ventaja competitiva de las naciones, según Michael Porter?",
+    "opciones": [
+      "Condiciones de los factores de producción",
+      "Condiciones de la demanda del mercado interno",
+      "Sectores afines y de apoyo",
+      "Estrategia, estructura y rivalidad de las empresas",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El 'diamante de Porter' sobre la ventaja competitiva nacional está compuesto por estos cuatro factores interrelacionados: factores productivos, demanda interna, sectores afines/auxiliares y la rivalidad/estrategia corporativa interna."
+  },
+  {
+    "id": 18,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) la(s) variable(s) que define(n) el concepto de productividad en el análisis operacional administrativo:",
+    "opciones": [
+      "Maximizar únicamente el consumo absoluto de recursos energéticos",
+      "La efectividad, entendida como el logro pleno de los objetivos trazados",
+      "La eficiencia, concebida como el logro de las metas con el empleo mínimo de insumos",
+      "El incremento deliberado de los costos de inventario de seguridad",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1,
+      2
+    ],
+    "explicacion": "La productividad se define como el cociente favorable insumo-producto en un periodo con apego a la calidad, la cual supone simultáneamente efectividad (alcanzar objetivos) y eficiencia (uso óptimo y mínimo de recursos)."
+  },
+  {
+    "id": 19,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la responsabilidad y respuesta social de los administradores, ¿cuál(es) afirmación(es) es(son) correcta(s)?",
+    "opciones": [
+      "La responsabilidad social empresarial considera formalmente el impacto global de las acciones corporativas en la sociedad",
+      "La sensibilidad social refiere a la capacidad y presteza de la empresa para responder con prontitud a las demandas de su entorno",
+      "La teoría administrativa actual circunscribe la responsabilidad social con exclusividad a las empresas mercantiles lucrativas",
+      "El argumento a favor de la intervención social señala que resolver problemas sociales previene la promulgación de regulaciones gubernamentales excesivas",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      3
+    ],
+    "explicacion": "La responsabilidad social y la sensibilidad social evalúan el impacto organizacional y la proactividad institucional ante demandas comunitarias. No se limitan a empresas comerciales, pues aplican a universidades, hospitales y dependencias gubernamentales."
+  },
+  {
+    "id": 20,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) acuerdo(s) o bloque(s) económico(s) regional(es) que persigue(n) el fomento comercial e integración aduanera entre países:",
+    "opciones": [
+      "Tratado de Libre Comercio de América del Norte (TLCAN)",
+      "Unión Europea (UE)",
+      "Asociación de Naciones del Sudeste Asiático (ASEAN)",
+      "Mercado Común del Sur (Mercosur)",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El texto identifica formalmente a la Unión Europea, el TLCAN, ASEAN y Mercosur como las grandes alianzas y bloques comerciales estratégicos en el entorno global contemporáneo."
+  },
+  {
+    "id": 21,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Según Robert L. Katz, ¿cuál(es) tipo(s) de habilidad(es) deben poseer los administradores para ser efectivos?",
+    "opciones": [
+      "Habilidades técnicas",
+      "Habilidades humanas",
+      "Habilidades conceptuales",
+      "Habilidad de diseño",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "Robert L. Katz identificó originalmente tres habilidades básicas (técnicas, humanas y conceptuales), a las cuales los autores añaden la habilidad de diseño (capacidad de resolver problemas para el beneficio de la empresa)."
+  },
+  {
+    "id": 22,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿En qué nivel(es) de la jerarquía organizacional resultan ser de máxima importancia las habilidades técnicas?",
+    "opciones": [
+      "Alta dirección",
+      "Mandos medios",
+      "Nivel corporativo global",
+      "Supervisores de primera línea",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      3
+    ],
+    "explicacion": "De acuerdo con el modelo de Katz y Koontz, las habilidades técnicas son más decisivas e indispensables en el nivel de supervisión operativa y van perdiendo relevancia relativa a medida que se asciende a la alta dirección."
+  },
+  {
+    "id": 23,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes enunciados define(n) el propósito primordial y común de todos los gerentes, tanto en organizaciones lucrativas como no lucrativas?",
+    "opciones": [
+      "Crear valor agregado o un excedente",
+      "Maximizar exclusivamente la riqueza monetaria inmediata de los accionistas",
+      "Diseñar y mantener un ambiente propicio para que los individuos cumplan metas de manera eficaz",
+      "Eliminar por completo el conflicto interpersonal en los equipos de trabajo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      2
+    ],
+    "explicacion": "La meta básica de todo administrador es establecer y conservar un ambiente óptimo para cumplir objetivos y generar valor agregado o superávit (excedente). En organizaciones no lucrativas, dicho excedente se traduce en la satisfacción de necesidades sociales."
+  },
+  {
+    "id": 24,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) considerado(s) innovador(es) pionero(s) de la administración científica por desarrollar los estudios de tiempos y movimientos, la gráfica de flujo y la psicología aplicada al obrero:",
+    "opciones": [
+      "Frank y Lillian Gilbreth",
+      "Hugo Münsterberg",
+      "Max Weber",
+      "Chester Barnard",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0
+    ],
+    "explicacion": "Frank Gilbreth (junto con su esposa Lillian) perfeccionó los estudios de tiempos y movimientos. Münsterberg fue precursor de la psicología industrial, Weber de la teoría de la burocracia y Barnard de los sistemas cooperativos."
+  },
+  {
+    "id": 25,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes elementos forma(n) parte formal del enfoque de 'sistemas cooperativos sociales' planteado por Chester Barnard?",
+    "opciones": [
+      "La organización vista como un sistema de actividades conscientemente coordinadas de dos o más personas",
+      "La necesidad indispensable de disposición para cooperar entre los miembros",
+      "La presencia irrestricta de un propósito común u objetivo compartido",
+      "El desinterés total por los sistemas de comunicación interpersonal",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Barnard conceptualizó a la empresa como un sistema social cooperativo cuyos componentes vitales son: la disposición a cooperar, el propósito común y la comunicación interna. Desestimar la comunicación contradice su teoría."
+  },
+  {
+    "id": 26,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) el(los) enfoque(s) de análisis administrativo que se concentra(n) en el rediseño radical de los procesos del negocio para conseguir mejoras espectaculares en costos, calidad, servicio y rapidez:",
+    "opciones": [
+      "Enfoque de la teoría de decisiones",
+      "Enfoque de reingeniería",
+      "Enfoque sociotécnico",
+      "Enfoque matemático u operacional cuantitativo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1
+    ],
+    "explicacion": "El enfoque de reingeniería (popularizado por Hammer y Champy) se centra expresamente en el replanteamiento fundamental y el rediseño radical de procesos clave."
+  },
+  {
+    "id": 27,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "De acuerdo con el modelo de análisis del enfoque operacional (del proceso administrativo), ¿cuál(es) es(son) su(s) característica(s) fundamental(es)?",
+    "opciones": [
+      "Reconoce un núcleo central de conocimientos exclusivo de la labor gerencial",
+      "Absorbe e integra conceptos pertinentes de disciplinas como la psicología, sociología y matemáticas",
+      "Se estructura en torno a las funciones universales de planear, organizar, integrar personal, dirigir y controlar",
+      "Rechaza por completo el empleo de aportes de la teoría de sistemas",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "El enfoque operacional posee un núcleo propio integrado por las funciones gerenciales y actúa como un marco integrador y ecléctico que asimila conocimientos útiles de otras ciencias."
+  },
+  {
+    "id": 28,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) variable(s) que integra(n) el proceso de transformación en el modelo de sistemas abiertos del proceso administrativo:",
+    "opciones": [
+      "La función de planear",
+      "La función de integrar personal",
+      "La función de dirigir y controlar",
+      "Los insumos y materias primas del entorno",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "En el modelo sistémico de Koontz, el proceso de transformación está conformado por la ejecución integrada de las funciones administrativas gerenciales (planear, organizar, integrar personal, dirigir y controlar). Los insumos son las entradas previas a dicho proceso."
+  },
+  {
+    "id": 29,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes grupos representa(n) 'solicitantes' o reclamantes legítimos cuyos requerimientos ingresan como insumos a la organización?",
+    "opciones": [
+      "Empleados",
+      "Consumidores",
+      "Accionistas",
+      "Gobiernos y comunidad",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El modelo sistémico abierto considera como grupos solicitantes (stakeholders) a empleados, consumidores, accionistas, proveedores, comunidad y entidades gubernamentales, cuyas demandas deben conciliarse."
+  },
+  {
+    "id": 30,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) teoría(s) ética(s) normativa(s) que sostiene(n) que las decisiones morales deben juzgarse exclusivamente por sus consecuencias prácticas, procurando el mayor bien para el mayor número de personas:",
+    "opciones": [
+      "Teoría de los derechos",
+      "Teoría de la justicia distributiva",
+      "Teoría utilitaria",
+      "Teoría de la virtud aristotélica",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      2
+    ],
+    "explicacion": "La teoría utilitaria fundamenta la moralidad del acto en sus consecuencias, priorizando el bienestar o beneficio de la mayoría. La teoría de los derechos prioriza libertades fundamentales y la de la justicia busca equidad e imparcialidad."
+  },
+  {
+    "id": 31,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Bajo la teoría de la justicia en la ética administrativa, ¿cuál(es) postulado(s) debe(n) respetarse?",
+    "opciones": [
+      "Las reglas deben administrarse con equidad, justicia e imparcialidad",
+      "Debe haber una distribución equitativa de beneficios y cargas según criterios justos",
+      "Los individuos deben recibir una indemnización si sufren un daño injusto por culpa ajena",
+      "La moralidad depende única y exclusivamente de la maximización de la utilidad neta",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "La teoría de la justicia exige equidad procesal, justicia distributiva y justicia compensatoria. Vincular la justicia meramente a la maximización de beneficios económicos es propio del enfoque utilitario."
+  },
+  {
+    "id": 32,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) argumento(s) habitualmente esgrimido(s) en contra de que las empresas asuman una responsabilidad social directa más allá del negocio:",
+    "opciones": [
+      "Viola la búsqueda primordial de la maximización de ganancias para los accionistas",
+      "Los costos derivados de la acción social se trasladan finalmente al consumidor en precios más altos",
+      "Los administradores de empresas carecen frecuentemente de competencias para resolver problemas sociales",
+      "Reduce el poder social global que la empresa ejerce sobre la sociedad civil",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Entre los argumentos en contra citados por Milton Friedman y otros teóricos destacan la dilución del propósito de lucro, el sobrecosto a clientes y la falta de habilidades directivas en políticas sociales. El argumento sobre el poder indica que intervenir aumentaría (no reduciría) el poder corporativo de forma riesgosa."
+  },
+  {
+    "id": 33,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la ética en la administración, ¿cuál(es) factor(es) promueve(n) el fomento y consolidación de normas éticas en las empresas contemporáneas?",
+    "opciones": [
+      "La formulación y difusión de un código formal de ética corporativo",
+      "La creación explícita de comités de ética",
+      "La impartición regular de programas de capacitación ética a directivos y empleados",
+      "El respaldo activo, ejemplo visible y compromiso del liderazgo superior",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "Institucionalizar la conducta ética requiere de políticas claras (códigos), mecanismos de supervisión (comités), entrenamiento continuo y, de forma indispensable, el ejemplo conductual de la alta dirección."
+  },
+  {
+    "id": 34,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) forma(s) en que las organizaciones pueden internacionalizarse y extender sus actividades hacia los mercados exteriores:",
+    "opciones": [
+      "Exportación e importación de bienes",
+      "Contratos de concesión de licencias y franquicias",
+      "Alianzas estratégicas y empresas conjuntas (joint ventures)",
+      "Inversión extranjera directa mediante subsidiarias",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El texto documenta la escala de internacionalización: inicia comúnmente con comercio exterior (exportación/importación), avanza hacia licencias o franquicias, joint ventures y finaliza en inversión directa en el extranjero."
+  },
+  {
+    "id": 35,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a las diferencias entre las prácticas gerenciales de Japón y Estados Unidos según la teoría administrativa, ¿cuál(es) proposición(es) es(son) correcta(s)?",
+    "opciones": [
+      "El empleo tradicional en las grandes empresas japonesas tendía a ser de por vida",
+      "La toma de decisiones en Japón utiliza frecuentemente la técnica por consenso (Ringisho)",
+      "La toma de decisiones en Estados Unidos tiende a ser predominantemente individual",
+      "La evaluación del desempeño en Estados Unidos se orienta con frecuencia al corto plazo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El modelo administrativo japonés histórico se distingue por el empleo a largo plazo y decisión colectiva consensuada, en contraposición con el enfoque estadounidense de movilidad laboral, responsabilidad individual y resultados a corto plazo."
+  },
+  {
+    "id": 36,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) considerado(s) uno de los catorce principios generales de la administración formulados por Henri Fayol:",
+    "opciones": [
+      "Unidad de mando",
+      "Unidad de dirección",
+      "Subordinación del interés individual al general",
+      "Espíritu de equipo (esprit de corps)",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "Fayol estableció 14 principios universales de la administración, dentro de los cuales figuran explícitamente la unidad de mando, unidad de dirección, subordinación del interés particular y espíritu de cuerpo, entre otros."
+  },
+  {
+    "id": 37,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "En el enfoque de contingencias o situacional del pensamiento administrativo, ¿cuál(es) es(son) su(s) postulado(s) central(es)?",
+    "opciones": [
+      "Existe un principio universal único y absoluto que garantiza el éxito gerencial idéntico en cualquier circunstancia",
+      "La práctica gerencial óptima depende directamente de las circunstancias peculiares de cada situación",
+      "Toma en cuenta la estrecha interrelación entre la estructura organizacional y las condiciones del ambiente externo",
+      "Desestima por completo cualquier uso previo de modelos teóricos de planeación",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1,
+      2
+    ],
+    "explicacion": "La teoría situacional o de contingencias subraya que no existe un método perfecto y absoluto para todas las organizaciones; la técnica administrativa aplicable depende de las variables contextuales y ambientales internas y externas."
+  },
+  {
+    "id": 38,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) la(s) razón(es) por la(s) cual(es) la comunicación abierta ejerce una función integradora indispensable dentro del sistema administrativo:",
+    "opciones": [
+      "Enlaza a la empresa abierta con su entorno y los diversos grupos de interés",
+      "Permite articular y coordinar secuencialmente las funciones administrativas entre sí",
+      "Facilita la modificación o adaptación del comportamiento organizacional ante cambios del mercado",
+      "Garantiza de forma automática y matemática la rentabilidad financiera del ejercicio",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "La comunicación es el medio integrador en el modelo de sistemas: relaciona las funciones gerenciales, conecta a la organización con su entorno y facilita el flujo de información para la toma de decisiones. No puede garantizar por sí sola el rendimiento financiero."
+  },
+  {
+    "id": 39,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la evolución de las innovaciones gerenciales, ¿a quién se le atribuye la formulación teórica de las burocracias basadas en la autoridad racional-legal?",
+    "opciones": [
+      "Henri Fayol",
+      "Frederick Winslow Taylor",
+      "Max Weber",
+      "Elton Mayo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      2
+    ],
+    "explicacion": "Max Weber formuló la teoría estructural de las organizaciones sustentada en la burocracia y la autoridad legal-racional caracterizada por jerarquía, reglas y división clara del trabajo."
+  },
+  {
+    "id": 40,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de las siguientes constituye(n) una aportación conceptual de Peter F. Drucker a la disciplina administrativa moderna?",
+    "opciones": [
+      "La popularización y difusión de la Administración por Objetivos (APO)",
+      "El concepto del 'trabajador del conocimiento'",
+      "El principio de que la rentabilidad no es el propósito final, sino una necesidad de supervivencia empresarial",
+      "La formulación original de la gráfica de Gantt para el control de la producción",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Drucker popularizó la APO en 1954, introdujo la noción de los trabajadores del conocimiento y definió el propósito empresarial en términos del cliente. La gráfica de cronogramas fue desarrollada por Henry L. Gantt."
+  },
+  {
+    "id": 41,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) el(los) autor(es) clásico(s) del pensamiento gerencial que introdujo(eron) la distinción formal entre los 14 principios universales y las operaciones técnicas de la empresa:",
+    "opciones": [
+      "Frederick Winslow Taylor",
+      "Frank Gilbreth",
+      "Henri Fayol",
+      "Hugo Münsterberg",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      2
+    ],
+    "explicacion": "Henri Fayol estructuró las funciones organizacionales en técnicas, comerciales, financieras, de seguridad, contables y administrativas, estableciendo además los 14 principios generales."
+  },
+  {
+    "id": 42,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "En el marco de la responsabilidad ecológica contemporánea, ¿cuál(es) medida(s) o enfoque(s) debe(n) incorporar los administradores en sus operaciones?",
+    "opciones": [
+      "Cumplimiento riguroso de la legislación y reglamentación sobre emisiones y vertidos",
+      "Incorporación de prácticas de prevención y control de la contaminación en el diseño productivo",
+      "Gestión adecuada de los residuos sólidos y uso eficiente de recursos no renovables",
+      "Ignorar el impacto del ciclo de vida del producto una vez colocado en manos del consumidor final",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "La administración ecológica impone a los gerentes respetar las normativas ambientales, reducir contaminantes y diseñar procesos sustentables. Desentenderse del impacto posterior del producto contradice la sustentabilidad moderna."
+  },
+  {
+    "id": 43,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) variable(s) que interviene(n) en el modelo de insumo-producto para volver a dotar de energía ('reenergizar') el sistema administrativo:",
+    "opciones": [
+      "La satisfacción de los empleados",
+      "Las utilidades retenidas e invertidas nuevamente en capital de trabajo",
+      "El conocimiento y experiencia acumulados durante el ciclo operacional",
+      "La obsolescencia acelerada de activos fijos",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "En los sistemas abiertos, los resultados (satisfacción, ganancias, retroalimentación del mercado) vuelven a alimentar e impulsar el sistema con nuevos recursos y motivación para reiniciar las funciones gerenciales."
+  },
+  {
+    "id": 44,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la ética individual y su aplicación corporativa, ¿cuál(es) enunciado(s) es(son) verdadero(s)?",
+    "opciones": [
+      "La ética individual se fundamenta en los valores personales forjados por la crianza, cultura y creencias",
+      "Un ambiente organizacional ético depende fuertemente de que las conductas incorrectas sean sancionadas equitativamente",
+      "Las conductas no éticas suelen agravarse cuando las metas corporativas son excesivamente irreales o inalcanzables",
+      "El comportamiento ético está garantizado de forma absoluta si la corporación cuenta con utilidades elevadas",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Los estándares éticos personales provienen de la formación individual, pero se modulan por el clima organizacional y la presión desmedida por metas irreales. Una rentabilidad financiera alta no previene ni garantiza comportamientos éticos."
+  },
+  {
+    "id": 45,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) elemento(s) característico(s) del marco de las '7 S' de McKinsey incluido(s) en la jungla de teorías administrativas:",
+    "opciones": [
+      "Estrategia (Strategy) y Estructura (Structure)",
+      "Sistemas (Systems) y Estilo (Style)",
+      "Personal (Staff) y Habilidades (Skills)",
+      "Valores compartidos (Shared values)",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El marco formulado por McKinsey & Company agrupa 7 elementos interdependientes: strategy, structure, systems, style, staff, skills y shared values, analizado dentro de los enfoques administrativos contemporáneos."
+  },
+  {
+    "id": 46,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto al concepto de 'sociedad plural', ¿cuál(es) de las siguientes afirmaciones es(son) correcta(s)?",
+    "opciones": [
+      "Implica que el poder está descentralizado y distribuido entre diversos grupos de la sociedad",
+      "Fomenta que los intereses de negocio de una organización coexistan con intereses públicos y comunitarios",
+      "Elimina cualquier necesidad de cabildeo o negociación con el sector público",
+      "Facilita la existencia de un sistema de frenos y contrapesos entre organizaciones sociales",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      3
+    ],
+    "explicacion": "La pluralidad social implica contrapesos mutuos y negociación constante entre sectores independientes. No elimina la necesidad de relacionamiento con el Estado, sino que la vuelve más compleja y necesaria."
+  },
+  {
+    "id": 47,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) la(s) dimensión(es) cultural(es) descrita(s) por Geert Hofstede que evalúa(n) el grado en que los miembros de una sociedad se sienten amenazados por situaciones ambiguas:",
+    "opciones": [
+      "Distanciamiento del poder",
+      "Evasión de la incertidumbre",
+      "Individualismo vs. colectivismo",
+      "Masculinidad vs. feminidad",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1
+    ],
+    "explicacion": "La evasión o tolerancia de la incertidumbre mide cómo la sociedad procura neutralizar situaciones ambiguas e inciertas mediante normas rígidas y protocolos institucionales."
+  },
+  {
+    "id": 48,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "En el contexto de la administración comparada internacional, ¿qué caracteriza al término cultural e interpersonal 'Guanxi' en China?",
+    "opciones": [
+      "Un sistema formal y cerrado de toma de decisiones jerárquicas individuales",
+      "Una red compleja de conexiones, relaciones personales de confianza y reciprocidad mutua",
+      "El sindicato único de trabajadores de la industria siderúrgica",
+      "El consejo directivo con representación obligatoria de los trabajadores",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1
+    ],
+    "explicacion": "El Guanxi en los negocios y administración china denota la red de relaciones interpersonales basada en confianza mutua, reciprocidad y lealtad informal."
+  },
+  {
+    "id": 49,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) autor(es) clásico(s) del enfoque sociotécnico que investigó(aron) la interacción entre la tecnología de extracción mecanizada y las pautas grupales en las minas de carbón británicas:",
+    "opciones": [
+      "Eric Trist y sus asociados del Instituto Tavistock",
+      "Frederick Taylor",
+      "Henri Fayol",
+      "Robert Owen",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0
+    ],
+    "explicacion": "El enfoque sociotécnico fue desarrollado por Eric Trist y el Instituto Tavistock al observar cómo las innovaciones técnicas mecánicas desestructuraban las relaciones sociales del trabajo grupal tradicional en la minería."
+  },
+  {
+    "id": 50,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes elementos representa(n) una de las principales limitaciones o críticas señaladas hacia la teoría de la calidad total?",
+    "opciones": [
+      "La ausencia de un consenso absoluto y unificado entre sus proponentes sobre su definición operativa",
+      "El riesgo de burocratización por exceso de documentación y procedimientos formales",
+      "Descuido del papel central del cliente en la propuesta de valor",
+      "El desinterés por el costo monetario en que se incurre para alcanzar cero defectos",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1
+    ],
+    "explicacion": "Las críticas teóricas hacia la TQM/calidad total radican en la falta de consenso teórico único y el peligro de un excesivo control procedural burocrático. La TQM pone foco absoluto en el cliente y la reducción de costos por desperdicio."
+  },
+  {
+    "id": 51,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) la(s) característica(s) de las corporaciones transnacionales que difiere(n) sustancialmente de las empresas globales tradicionales:",
+    "opciones": [
+      "Mantienen una sede central que controla de forma rígida y unilateral toda la producción mundial",
+      "Operan sin una base o centro geográfico único, reconociendo competencias distribuidas internacionalmente",
+      "Aprovechan las capacidades de las subsidiarias locales para alimentar e innovar el sistema global",
+      "Operan exclusivamente mediante intermediarios de comercio exterior sin presencia física",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1,
+      2
+    ],
+    "explicacion": "La empresa transnacional se estructura como una red integrada y sin fronteras nacionales fijas, donde las sucursales locales actúan como centros generadores de ventajas que se transfieren a escala internacional."
+  },
+  {
+    "id": 52,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de las siguientes variables constituye(n) un factor económico clave dentro del ambiente externo indirecto de una empresa?",
+    "opciones": [
+      "Las tasas de interés y la política monetaria",
+      "Los niveles de inflación y la estabilidad del tipo de cambio",
+      "El poder adquisitivo disponible de los consumidores",
+      "El organigrama departamental de la firma competidora",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "El ambiente económico exterior engloba la inflación, tipo de cambio, tasas de interés, política fiscal y demanda agregada disponible. El organigrama ajeno es un dato específico de competencia, no una variable macroeconómica de entorno."
+  },
+  {
+    "id": 53,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) aportación(es) conceptual(es) relevante(s) atribuida(s) a Lillian Gilbreth en el desarrollo temprano del pensamiento gerencial:",
+    "opciones": [
+      "La aplicación de principios psicológicos y de bienestar humano al estudio de puestos",
+      "La introducción de la gráfica de barras cronológica para planeación de operaciones",
+      "El análisis del impacto de la fatiga laboral en el rendimiento de los trabajadores",
+      "La redacción de los 14 principios universales de la administración",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      2
+    ],
+    "explicacion": "Lillian Gilbreth integró la psicología al estudio del trabajo industrial y se concentró en la mitigación de la fatiga obrera y el bienestar humano. Gantt concibió la gráfica homónima y Fayol los 14 principios."
+  },
+  {
+    "id": 54,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la noción de 'efectividad' en la teoría de la productividad gerencial, ¿cuál(es) es(son) su(s) premisa(s) técnica(s)?",
+    "opciones": [
+      "Mide prioritariamente el menor uso posible de horas hombre consumidas",
+      "Mide la capacidad de alcanzar los fines u objetivos planificados de la organización",
+      "Es sinónimo directo e indistinto del concepto de eficiencia económica pura",
+      "Implica cumplir con las especificaciones y propósitos establecidos",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      1,
+      3
+    ],
+    "explicacion": "La efectividad se refiere formalmente a 'hacer las cosas correctas', es decir, al logro pleno de los objetivos trazados. La eficiencia mide el rendimiento de los insumos ('hacer bien las cosas con el mínimo recurso')."
+  },
+  {
+    "id": 55,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) el(los) pionero(s) de la administración científica que introdujo(eron) un sistema de incentivo salarial mediante bonificaciones por tarea cumplida antes del estándar:",
+    "opciones": [
+      "Henry L. Gantt",
+      "Hugo Münsterberg",
+      "Max Weber",
+      "Chester Barnard",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0
+    ],
+    "explicacion": "Henry L. Gantt ideó el sistema de salarios con bonificaciones cuando el trabajador superaba la cuota estándar diaria asignada, además de incentivar financieramente al supervisor del turno."
+  },
+  {
+    "id": 56,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a las alianzas entre países y bloques económicos globales, ¿cuál(es) es(son) característica(s) de la Unión Europea (UE)?",
+    "opciones": [
+      "Estableció una moneda común (el euro) para la mayoría de sus Estados miembros",
+      "Permite la libre circulación de bienes, servicios, personas y capitales",
+      "Prohíbe a sus países miembros mantener relaciones comerciales con países del continente asiático",
+      "Promueve la convergencia y armonización de normas técnicas y estándares industriales",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      3
+    ],
+    "explicacion": "La UE consagra las cuatro libertades de circulación (personas, capitales, bienes, servicios), armonización legal y el euro en su unión monetaria. No impone embargos al comercio asiático."
+  },
+  {
+    "id": 57,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) dimensión(es) que evalúa(n) el marco de las condiciones de los factores en la ventaja competitiva de las naciones (Porter):",
+    "opciones": [
+      "La disponibilidad de mano de obra cualificada y especializada",
+      "La infraestructura física, digital y logística del país",
+      "La base de conocimientos científicos y tecnológicos institucionales",
+      "La concentración demográfica absoluta sin capacitación",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Los factores avanzados de producción en el modelo de Michael Porter comprenden el talento calificado, la infraestructura tecnológica y las capacidades de investigación del entorno nacional. La masa demográfica pasiva sin capacitación no otorga ventaja competitiva sustentable."
+  },
+  {
+    "id": 58,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a los denunciantes corporativos de irregularidades (Whistleblowers), ¿cuál(es) afirmación(es) es(son) correcta(s)?",
+    "opciones": [
+      "Son empleados o colaboradores que revelan ilegalidades o prácticas contrarias a la ética a entidades internas o externas",
+      "Suelen enfrentar represalias laborales si no existen políticas explícitas de protección y reserva",
+      "La legislación moderna (como la Ley Sarbanes-Oxley) prevé marcos protectores para ellos",
+      "Su denuncia exime a la alta gerencia de realizar auditorías contables",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Los denunciantes (whistleblowers) informan faltas éticas o legales y requieren amparo formal debido al riesgo de despidos o acoso. No reemplazan los procedimientos obligatorios de auditoría."
+  },
+  {
+    "id": 59,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquella(s) corriente(s) o escuela(s) que concibe(n) a la administración como una entidad analítica puramente formal basada en modelos y expresiones simbólicas:",
+    "opciones": [
+      "Enfoque matemático o de 'ciencia de la administración'",
+      "Enfoque de la teoría de la contingencia",
+      "Enfoque de roles gerenciales de Mintzberg",
+      "Enfoque sociotécnico de Tavistock",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0
+    ],
+    "explicacion": "El enfoque cuantitativo/matemático concibe la gestión gerencial a través de la investigación de operaciones, fórmulas y algoritmos estructurados de decisión."
+  },
+  {
+    "id": 60,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "En relación con los desafíos gerenciales del siglo XXI analizados por Koontz, ¿cuál(es) constituye(n) un factor determinante de impacto global?",
+    "opciones": [
+      "La evolución y avance vertiginoso de la tecnología de la información",
+      "La aceleración de los procesos de globalización e interdependencia de mercados",
+      "La creciente demanda social por prácticas empresariales éticas y sustentables",
+      "La reversión definitiva y desaparición total de las corporaciones multinacionales",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "Los autores identifican tres ejes del siglo XXI: las tecnologías de información emergentes, la globalización y la creciente exigencia social y ética corporativa. Las empresas multinacionales se expanden continuamente, no han desaparecido."
+  }
+];
