@@ -443,39 +443,23 @@ async function handleVerifyClick() {
     return;
   }
 
-  // 1. Mostrar estado de carga asíncrona (AJAX en progreso)
-  DOM.btnVerifyAnswer.disabled = true;
-  DOM.btnVerifyText.textContent = 'Verificando con AJAX...';
-  DOM.verifySpinner.style.display = 'inline-block';
-  DOM.verifyIcon.style.display = 'none';
+  // Evaluación 100% inmediata sin retrasos artificiales
+  const evalResult = evaluateQuestion(currentQ, selected);
 
-  try {
-    // 2. Ejecutar petición AJAX asíncrona (Fetch)
-    const evalResult = await verificarRespuestaAjax(index, selected);
+  // Guardar en el estado para persistencia
+  state.verifiedQuestions[index] = evalResult;
 
-    // 3. Guardar en el estado para persistencia entre navegaciones
-    state.verifiedQuestions[index] = evalResult;
+  // Actualizar estado del botón
+  DOM.btnVerifyAnswer.classList.add('verified');
+  DOM.btnVerifyText.textContent = 'Verificado ✓';
+  DOM.verifySpinner.style.display = 'none';
+  DOM.verifyIcon.style.display = 'inline-block';
 
-    // 4. Restaurar estado del botón
-    DOM.btnVerifyAnswer.disabled = false;
-    DOM.btnVerifyAnswer.classList.add('verified');
-    DOM.btnVerifyText.textContent = 'Verificado ✓ (Re-verificar)';
-    DOM.verifySpinner.style.display = 'none';
-    DOM.verifyIcon.style.display = 'inline-block';
+  // Renderizar de inmediato el mensaje y los estados en las opciones
+  displayVerificationFeedback(index, evalResult);
+  applyVerifiedOptionStyles(index, evalResult);
 
-    // 5. Renderizar dinámicamente el mensaje y los estados en las opciones
-    displayVerificationFeedback(index, evalResult);
-    applyVerifiedOptionStyles(index, evalResult);
-
-    if (window.feather) feather.replace();
-
-  } catch (err) {
-    console.error('Error durante la verificación AJAX:', err);
-    DOM.btnVerifyAnswer.disabled = false;
-    DOM.btnVerifyText.textContent = 'Error. Reintentar';
-    DOM.verifySpinner.style.display = 'none';
-    DOM.verifyIcon.style.display = 'inline-block';
-  }
+  if (window.feather) feather.replace();
 }
 
 /**

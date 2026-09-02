@@ -2,82 +2,132 @@
   {
     "id": 1,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "¿Cuál(es) es(son) función(es) gerencial(es) básica(s) que compone(n) el proceso administrativo?",
+    "pregunta": "¿Cuál(es) de los siguientes enunciados describe(n) el concepto formal de 'organización' según Harold Koontz y Heinz Weihrich?",
     "opciones": [
-      "Planear",
-      "Organizar",
-      "Integrar el personal (Staffing)",
-      "Controlar",
+      "Un grupo de personas que trabajan en conjunto para crear valor agregado",
+      "Una entidad orientada exclusivamente a la obtención de lucro financiero",
+      "Una estructura intencional y formal de funciones o puestos",
+      "Cualquier agrupación de individuos sin metas predeterminadas",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
       0,
-      1,
-      2,
-      3
+      2
     ],
-    "explicacion": "Koontz y Weihrich establecen cinco funciones gerenciales esenciales en las que se organiza el conocimiento administrativo: planear, organizar, integrar el personal, dirigir y controlar."
+    "explicacion": "Koontz y Weihrich definen organización como un grupo de personas que colaboran para generar valor agregado, y en términos operativos, como una estructura intencional y formalizada de puestos o funciones. No se restringe únicamente al lucro mercantil ni a grupos sin objetivos."
   },
   {
     "id": 2,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) considerado(s) el padre de la administración moderna debido a la postulación de los 14 principios administrativos y la sistematización de la teoría operacional:",
+    "pregunta": "¿Cuál(es) de los siguientes autores clásicos es(son) considerado(s) el principal precursor de la psicología industrial aplicada a la selección de personal y la fatiga laboral?",
     "opciones": [
-      "Frederick Winslow Taylor",
-      "Elton Mayo",
+      "Henri Fayol",
       "Max Weber",
+      "Hugo Münsterberg",
       "Chester Barnard",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
-      4
+      2
     ],
-    "explicacion": "Henri Fayol es universalmente reconocido en el texto como el padre de la teoría de la administración moderna. Al no figurar entre las opciones A, B, C ni D, la respuesta correcta es 'Ninguna de las anteriores'."
+    "explicacion": "Hugo Münsterberg es reconocido en la historia del pensamiento administrativo como el padre y pionero indiscutible de la aplicación de la psicología en la industria y la administración."
   },
   {
     "id": 3,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "¿Cuál(es) de los siguientes preceptos corresponde(n) a los principios fundamentales de la administración científica formulados por Frederick W. Taylor?",
+    "pregunta": "Es(son) aquella(s) habilidad(es) descrita(s) por Robert Katz que representa(n) la capacidad de contemplar la organización como un todo integral y reconocer las interrelaciones entre sus partes:",
     "opciones": [
-      "Reemplazar las reglas empíricas por ciencia y conocimiento organizado",
-      "Lograr armonía y cooperación de grupo, más que discordia o individualismo caótico",
-      "Trabajar para obtener la máxima producción, en lugar de una producción restringida",
-      "Establecer la codeterminación obrero-patronal en el consejo directivo",
+      "Habilidad técnica",
+      "Habilidad humana",
+      "Habilidad conceptual",
+      "Habilidad de mando operativo",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
-      0,
-      1,
       2
     ],
-    "explicacion": "Taylor fundamentó su enfoque científico en cuatro preceptos clave: ciencia en vez de empirismo, armonía grupal, producción máxima y desarrollo pleno del trabajador. La codeterminación es una práctica laboral institucional propia de Alemania, no de Taylor."
+    "explicacion": "La habilidad conceptual consiste en coordinar e integrar todos los intereses y las actividades de la organización con una perspectiva global, cobrando su mayor peso en la alta gerencia."
   },
   {
     "id": 4,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "Respecto a la noción de administrar como ciencia o arte, ¿cuál(es) afirmación(es) es(son) conceptualmente correcta(s)?",
+    "pregunta": "En el modelo sistémico del proceso administrativo, ¿cuál(es) de los siguientes elementos representa(n) productos o resultados (outputs) generados hacia el ambiente externo?",
     "opciones": [
-      "La práctica de la administración constituye propiamente un arte",
-      "El conocimiento organizado y sistemático que subyace a la práctica administrativa constituye una ciencia",
-      "La ciencia y el arte en la administración son mutuamente excluyentes y antagónicos",
-      "La ciencia de la administración es exacta e invariable al igual que la física pura",
+      "Bienes y servicios",
+      "Ganancias o utilidades financieras",
+      "Satisfacción de los empleados y clientes",
+      "Reglamentos y políticas gubernamentales",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
       0,
-      1
+      1,
+      2
     ],
-    "explicacion": "Administrar como práctica aplicada es un arte (know-how), mientras que el corpus de conocimiento organizado que respalda dicha práctica es una ciencia. Ambos se complementan mutuamente y la ciencia gerencial dista de ser exacta debido a la complejidad de las variables humanas."
+    "explicacion": "En el modelo de sistemas abiertos, las salidas o productos del proceso administrativo de transformación corresponden a bienes, servicios, utilidades, satisfacción laboral e integración de metas. Las regulaciones gubernamentales constituyen limitaciones o insumos externos del entorno."
   },
   {
     "id": 5,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "¿Cuál(es) de los siguientes elementos constituye(n) insumo(s) del modelo sistémico del proceso administrativo?",
+    "pregunta": "Es(son) el(los) principio(s) que sostiene(n) que la práctica administrativa eficaz debe amoldarse y adecuarse a las contingencias del contexto interno y externo, negando la existencia de recetas de gestión absolutas y universales:",
     "opciones": [
-      "Recursos humanos, de capital e infraestructura",
-      "Habilidades gerenciales, conocimientos y competencias técnicas",
-      "Demandas y expectativas de los solicitantes (empleados, consumidores, accionistas, gobierno)",
-      "Bienes terminados, servicios y utilidades netas generadas",
+      "Enfoque del comportamiento interpersonal",
+      "Enfoque de la teoría de sistemas cerrados",
+      "Enfoque de contingencias o situacional",
+      "Enfoque operacional normativo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      2
+    ],
+    "explicacion": "El enfoque de contingencias (o enfoque situacional) sostiene que la acción gerencial depende rigurosamente del conjunto de circunstancias o parámetros propios de cada situación."
+  },
+  {
+    "id": 6,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes roles corresponde(n) a la categoría de roles interpersonales en la taxonomía directiva planteada por Henry Mintzberg?",
+    "opciones": [
+      "Rol de figura central (o cabeza visible)",
+      "Rol de enlace",
+      "Rol de difusor",
+      "Rol de líder",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      3
+    ],
+    "explicacion": "Mintzberg clasifica los roles interpersonales en: cabeza visible (figura ceremonial), líder y enlace. El rol de difusor pertenece formalmente al grupo de roles informativos."
+  },
+  {
+    "id": 7,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) considerada(s) una de las 14 reglas o principios universales de la administración postulados por Henri Fayol:",
+    "opciones": [
+      "Remuneración equitativa del personal",
+      "Jerarquía (línea de autoridad o cadena escalar)",
+      "Orden social y material",
+      "Estabilidad en la permanencia del personal",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "Los cuatro conceptos señalados forman parte integral de la lista de los catorce principios clásicos enunciados por Henri Fayol para asegurar el buen funcionamiento del cuerpo administrativo."
+  },
+  {
+    "id": 8,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes factores integra(n) el ambiente tecnológico externo al que se enfrenta la gerencia moderna?",
+    "opciones": [
+      "El estado general del conocimiento científico y técnico",
+      "Las aplicaciones prácticas de la robótica y la inteligencia artificial",
+      "Las innovaciones de software, comercio móvil y plataformas de comunicación en red",
+      "La política tributaria sobre el impuesto a la renta",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
@@ -85,67 +135,50 @@
       1,
       2
     ],
-    "explicacion": "Los insumos provienen del ambiente externo e integran recursos físicos/humanos, capital, capacidades gerenciales y las solicitudes legítimas de los grupos de interés. Los bienes, servicios y utilidades corresponden a los resultados o productos (outputs) del sistema."
+    "explicacion": "El entorno tecnológico agrupa la ciencia organizada, el desarrollo técnico, la automatización y los medios computacionales y móviles. El régimen tributario pertenece exclusivamente al ambiente político-legal y económico."
   },
   {
-    "id": 6,
+    "id": 9,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) la(s) conclusión(es) fundamental(es) obtenida(s) en los célebres estudios desarrollados por Elton Mayo y F. J. Roethlisberger en la planta Hawthorne:",
+    "pregunta": "Es(son) aquella(s) teoría(s) moral(es) que afirma(n) que los deberes morales se fundamentan primordialmente en garantizar los derechos civiles y libertades inalienables de las personas:",
     "opciones": [
-      "La iluminación física y la temperatura ambiental determinan de forma directa y lineal el nivel de fatiga laboral",
-      "Los incentivos puramente económicos son el único factor que estimula la productividad del obrero",
-      "La productividad mejora sustancialmente debido a factores sociales, relaciones de grupo y el reconocimiento interpersonal",
-      "El establecimiento formal de tiempos y movimientos elimina los tiempos muertos en la línea de ensamble",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      2
-    ],
-    "explicacion": "El efecto Hawthorne demostró que las relaciones sociales, el sentido de pertenencia al grupo y la atención de la gerencia hacia las necesidades humanas inciden más en la productividad que los cambios meramente físicos o fisiológicos."
-  },
-  {
-    "id": 7,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "En el modelo de análisis gerencial de Henry Mintzberg, ¿cuál(es) función(es) o rol(es) pertenece(n) a la categoría de roles de decisión?",
-    "opciones": [
-      "Rol de emprendedor",
-      "Rol de líder",
-      "Rol de asignador de recursos",
-      "Rol de negociador",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      2,
-      3
-    ],
-    "explicacion": "Mintzberg agrupa diez funciones: los roles decisorios son emprendedor, manejador de disturbios, asignador de recursos y negociador. El rol de líder corresponde a la categoría interpersonal."
-  },
-  {
-    "id": 8,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) aquella(s) condición(es) o postulado(s) que define(n) a una 'sociedad plural' donde operan las empresas contemporáneas:",
-    "opciones": [
-      "Existe un monopolio estatal absoluto sobre la asignación de recursos",
-      "Muchos grupos organizados representan intereses divergentes y ninguno ejerce un poder total desmedido",
-      "La fuerza laboral carece de representación social o sindical",
-      "Todos los grupos de interés poseen idénticos objetivos y prioridades operativas",
+      "Teoría utilitaria del bienestar social",
+      "Teoría basada en los derechos",
+      "Teoría de la contingencia ética",
+      "Teoría de la justicia procesal",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
       1
     ],
-    "explicacion": "Una sociedad plural es aquella donde diversos grupos organizados defienden intereses propios y se influyen mutuamente sin que una sola entidad concentre un poder tiránico o desmedido, obligando al administrador a conciliar metas divergentes."
+    "explicacion": "La teoría basada en los derechos sostiene que todos los individuos poseen facultades básicas (como el derecho a la vida, a la privacidad y a la verdad) que deben ser protegidas al tomar cualquier decisión."
   },
   {
-    "id": 9,
+    "id": 10,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "¿Cuál(es) factor(es) forma(n) parte del ambiente externo general que influye en la organización?",
+    "pregunta": "Respecto a la figura institucional del 'ombudsman' en las organizaciones contemporáneas, ¿cuál(es) es(son) su(s) función(es) principal(es)?",
     "opciones": [
-      "Entorno ecológico y tecnológico",
-      "Entorno económico y social",
-      "Entorno ético y político-legal",
-      "Estructura departamental interna",
+      "Investigar de manera imparcial quejas y preocupaciones de los empleados sobre injusticias o dilemas éticos",
+      "Elaborar los estados contables obligatorios y balances financieros del ejercicio",
+      "Proveer un canal confidencial y neutral para resolver conflictos internos",
+      "Imponer sanciones disciplinarias ejecutivas y despidos directos de personal",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      2
+    ],
+    "explicacion": "El ombudsman actúa como un mediador confidencial e investigador neutral de inquietudes o desviaciones éticas en la firma. No reemplaza a la gerencia en la aplicación de sanciones punitivas ni asume funciones contables."
+  },
+  {
+    "id": 11,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "¿Cuál(es) de los siguientes argumentos respalda(n) a favor la asunción de una postura proactiva de Responsabilidad Social Empresarial (RSE)?",
+    "opciones": [
+      "Las expectativas del público y la comunidad demandan una mayor participación de las empresas",
+      "La creación de una mejor imagen corporativa ante clientes e inversores",
+      "Prevenir o desincentivar la creación de regulaciones gubernamentales excesivas y restrictivas",
+      "Asegurar a corto plazo la total desgravación de los impuestos empresariales",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
@@ -153,204 +186,161 @@
       1,
       2
     ],
-    "explicacion": "El ambiente externo de la organización se clasifica en los factores económicos, tecnológicos, sociales, ecológicos, éticos y político-legales. La estructura departamental interna es una variable del sistema organizacional interno, no de su entorno."
+    "explicacion": "Los argumentos teóricos que favorecen la RSE incluyen la respuesta a las expectativas de la opinión pública, la mejora reputacional y la reducción de futuras presiones normativas o fiscalizadoras del Estado. No elimina las obligaciones fiscales de la empresa."
   },
   {
-    "id": 10,
+    "id": 12,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) aquel(los) mecanismo(s) o figura(s) institucional(es) orientada(s) a facilitar la aplicación de la ética y proteger la libre revelación de irregularidades organizacionales:",
+    "pregunta": "Es(son) aquella(s) orientación(es) gerencial(es) en la cual la administración de las subsidiarias extranjeras replica fielmente las prácticas, métodos y personal directivo exclusivo de la casa matriz:",
     "opciones": [
-      "Comités y líneas directas de denuncia confidencial",
-      "La figura del ombudsman institucional para investigar inquietudes internas",
-      "Códigos de ética formalmente promulgados",
-      "Directrices de auditoría externa y protección legal al denunciante (whistleblower)",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "explicacion": "Para institucionalizar la ética, los autores señalan la efectividad de códigos formales de conducta, el nombramiento de un ombudsman, comités éticos y sistemas estructurados de protección a denunciantes de abusos o ilegalidades."
-  },
-  {
-    "id": 11,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) aquella(s) orientación(es) gerencial(es) en la cual las subsidiarias en el extranjero cuentan con amplia autonomía administrativa bajo la premisa de que el personal local comprende mejor las condiciones locales:",
-    "opciones": [
-      "Orientación etnocéntrica",
+      "Orientación policéntrica",
       "Orientación geocéntrica",
       "Orientación regiocéntrica",
-      "Orientación centralizada de matriz",
+      "Orientación integradora multinacional",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
       4
     ],
-    "explicacion": "La descripción teórica corresponde formalmente a la 'Orientación policéntrica'. Dado que dicha alternativa no figura explícitamente entre las opciones presentadas, la respuesta correcta es 'Ninguna de las anteriores'."
-  },
-  {
-    "id": 12,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "¿Cuál(es) de las siguientes constituye(n) una de las dimensiones culturales del comportamiento social identificadas por Geert Hofstede?",
-    "opciones": [
-      "Individualismo frente a colectivismo",
-      "Distanciamiento del poder contra acercamiento a éste",
-      "Tolerancia a la incertidumbre frente a su evasión",
-      "Masculinidad frente a feminidad",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "explicacion": "El modelo original de Geert Hofstede estableció estas cuatro dimensiones nodales del comportamiento cultural organizacional, complementadas posteriormente por la orientación a largo plazo frente a corto plazo."
+    "explicacion": "La definición corresponde con rigor al enfoque u 'Orientación etnocéntrica'. Dado que dicha opción no se encuentra explicitada en las alternativas A, B, C ni D, la respuesta correcta es 'Ninguna de las anteriores'."
   },
   {
     "id": 13,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "Respecto a la orientación geocéntrica en corporaciones multinacionales, ¿cuál(es) premisa(s) es(son) verdadera(s)?",
+    "pregunta": "En el marco de la investigación cultural de Geert Hofstede, ¿qué mide formalmente el índice de 'distanciamiento del poder'?",
     "opciones": [
-      "La corporación en su totalidad se percibe como un sistema interdependiente de alcance mundial",
-      "La comunicación entre la matriz y las subsidiarias fluye en dos sentidos de forma colaborativa",
-      "Las prácticas extranjeras se basan únicamente en las costumbres impuestas por la sede matriz",
-      "Las fuentes de talento administrativo se seleccionan con base en una bolsa de trabajo estrictamente nacional",
+      "El grado de formalidad burocrática en la comunicación interdepartamental",
+      "El grado en que los miembros menos poderosos de una sociedad aceptan y esperan que el poder se distribuya de manera desigual",
+      "La preferencia de una sociedad por el trabajo en equipo cooperativo frente al individual",
+      "La velocidad técnica con que una organización implementa nuevas tecnologías",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
-      0,
       1
     ],
-    "explicacion": "La perspectiva geocéntrica opera globalmente considerando la interdependencia con flujo bidireccional y talento mundial. Replicar sólo las costumbres de la sede central y reclutar de forma local/nacional caracteriza al enfoque etnocéntrico."
+    "explicacion": "El distanciamiento del poder (power distance) mide el nivel de conformidad y tolerancia cultural que exhiben los miembros ante las asimetrías jerárquicas y la concentración de la autoridad formal."
   },
   {
     "id": 14,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) aquel(los) término(s) con que Harold Koontz denominó la proliferación dispersa de enfoques, métodos e interpretaciones metodológicas del pensamiento gerencial:",
+    "pregunta": "¿Cuál(es) de las siguientes constituye(n) una modalidad formal de interacción y penetración de mercados extranjeros para una empresa internacional?",
     "opciones": [
-      "Archipiélago epistemológico",
-      "La jungla de la teoría de la administración",
-      "Dilema metodológico contemporáneo",
-      "Enfoque de dispersión operacional",
+      "Exportación e importación de bienes o insumos",
+      "Contratos de administración para gestionar firmas en el país anfitrión",
+      "Contratos de licencia o franquicias de producción y comercialización",
+      "Sociedades en participación o empresas conjuntas (joint ventures)",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explicacion": "El Capítulo 3 describe exhaustivamente estos métodos de entrada internacional: el comercio exterior tradicional, los contratos gerenciales, las licencias y la inversión asociada mediante coinversiones (joint ventures) o subsidiarias propias."
+  },
+  {
+    "id": 15,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) bloque(s) o tratado(s) comercial(es) de integración económica formalizado(s) entre países del continente asiático:",
+    "opciones": [
+      "TLCAN",
+      "Mercosur",
+      "Unión Europea (UE)",
+      "Comunidad Andina",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      4
+    ],
+    "explicacion": "El principal bloque asiático abordado en este apartado es la ASEAN (Asociación de Naciones del Sudeste Asiático). Al no constar en las alternativas presentadas, la respuesta es 'Ninguna de las anteriores'."
+  },
+  {
+    "id": 16,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la filosofía de la calidad planteada por W. Edwards Deming, ¿cuál(es) premisa(s) es(son) conceptualmente válida(s)?",
+    "opciones": [
+      "Se debe mejorar de forma continua e incesante el sistema de producción y de servicio",
+      "La inspección masiva al final de la línea es la única garantía indiscutible de excelencia",
+      "Se debe eliminar el miedo en el clima laboral para que los empleados colaboren con eficacia",
+      "Derribar las barreras departamentales para fomentar el trabajo en equipo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      2,
+      3
+    ],
+    "explicacion": "Dentro de sus 14 puntos célebres, Deming promueve la mejora continua de procesos, desterrar el miedo del personal y articular el trabajo interdepartamental. Señaló expresamente que debe abandonarse la dependencia de la inspección masiva para lograr calidad, trasladando el control a la prevención."
+  },
+  {
+    "id": 17,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "En el modelo de la ventaja competitiva de las naciones expuesto por Michael Porter, ¿a qué refiere el determinante de 'sectores afines y de apoyo'?",
+    "opciones": [
+      "A la subvención económica y rescate financiero permanente otorgado por el Estado nacional",
+      "A la presencia en el país de industrias proveedoras e industrias correlacionadas internacionalmente competitivas",
+      "Al control sindical de las ramas productivas clave del país",
+      "A la paridad cambiaria de la divisa respecto a monedas de reserva global",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
       1
     ],
-    "explicacion": "Koontz acuñó el clásico concepto 'La jungla de la teoría de la administración' para referirse a la fragmentación académica y la confusión terminológica producida por autores con disciplinas diversas."
-  },
-  {
-    "id": 15,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "En el marco de las diferencias en administración internacional, ¿cuál(es) proposición(es) sobre las prácticas gerenciales por país es(son) técnicamente correcta(s)?",
-    "opciones": [
-      "El modelo de conglomerados surcoreano caracterizado por estrecha cooperación estatal se denomina Chaebol",
-      "En Alemania, la autoridad de los administradores y la estructura de decisión se ven formalmente influidas por el concepto de codeterminación",
-      "En Francia, la planeación gubernamental tiene un peso e influencia significativa sobre los planes de las corporaciones privadas",
-      "El término 'Inhwa' en la administración de Corea del Sur refiere formalmente al concepto cultural y organizacional de armonía",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "explicacion": "Todas las afirmaciones corresponden con exactitud al marco teórico del Capítulo 3 sobre administración comparada: chaebol e inhwa en Corea del Sur, la codeterminación alemana y la influencia de la planeación indicativa estatal francesa."
-  },
-  {
-    "id": 16,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) considerado(s) autor(es) y colaborador(es) destacado(s) de la teoría de la calidad y su gestión operacional en las organizaciones:",
-    "opciones": [
-      "W. Edwards Deming",
-      "Joseph M. Juran",
-      "Philip B. Crosby",
-      "Hugo Münsterberg",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      1,
-      2
-    ],
-    "explicacion": "Deming, Juran y Crosby son citados como los principales teóricos y precursores del movimiento de la calidad. Münsterberg es pionero en la aplicación de la psicología industrial y las ciencias del comportamiento."
-  },
-  {
-    "id": 17,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "¿Cuál(es) de las siguientes corresponde(n) a las cuatro dimensiones o factores determinantes de la ventaja competitiva de las naciones, según Michael Porter?",
-    "opciones": [
-      "Condiciones de los factores de producción",
-      "Condiciones de la demanda del mercado interno",
-      "Sectores afines y de apoyo",
-      "Estrategia, estructura y rivalidad de las empresas",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "explicacion": "El 'diamante de Porter' sobre la ventaja competitiva nacional está compuesto por estos cuatro factores interrelacionados: factores productivos, demanda interna, sectores afines/auxiliares y la rivalidad/estrategia corporativa interna."
+    "explicacion": "Los sectores afines y de apoyo corresponden a las redes locales o nacionales de proveedores eficientes y sectores complementarios que facilitan insumos, innovación compartida y economías de aglomeración competitiva (clusters)."
   },
   {
     "id": 18,
     "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) la(s) variable(s) que define(n) el concepto de productividad en el análisis operacional administrativo:",
+    "pregunta": "¿Cuál(es) de las siguientes características corresponde(n) al modelo gerencial japonés y la Teoría Z analizados en la administración comparada?",
     "opciones": [
-      "Maximizar únicamente el consumo absoluto de recursos energéticos",
-      "La efectividad, entendida como el logro pleno de los objetivos trazados",
-      "La eficiencia, concebida como el logro de las metas con el empleo mínimo de insumos",
-      "El incremento deliberado de los costos de inventario de seguridad",
+      "Empleo a largo plazo y estabilidad en la contratación laboral",
+      "Toma de decisiones individualista y autocrática",
+      "Preocupación holística integral por el individuo y su entorno familiar",
+      "Proceso de toma de decisiones consensuado y participativo",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      2,
+      3
+    ],
+    "explicacion": "La administración japonesa y la Teoría Z (Ouchi) se distinguen por el vínculo a largo plazo, la toma consensuada de decisiones mediante consulta grupal y el enfoque humano integral hacia el colaborador. La toma de decisiones autocrática e individualizada es típica del modelo tradicional occidental o burocrático."
+  },
+  {
+    "id": 19,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Es(son) aquel(los) enfoque(s) de la administración de la calidad reconocido(s) internacionalmente para auditar y certificar sistemas de gestión estandarizados en organizaciones:",
+    "opciones": [
+      "Normas ISO 9000",
+      "Premio Nacional de Calidad Malcolm Baldrige",
+      "Modelo del Premio Europeo de la Calidad (EFQM)",
+      "Índice de Precios al Consumidor (IPC)",
+      "Ninguna de las anteriores"
+    ],
+    "respuestasCorrectas": [
+      0,
+      1,
+      2
+    ],
+    "explicacion": "El Capítulo 3 subraya como herramientas globales de calidad y excelencia operativa a la familia de estándares ISO 9000, el galardón Malcolm Baldrige estadounidense y el modelo de excelencia europeo EFQM. El IPC es un indicador macroeconómico ajeno a la calidad."
+  },
+  {
+    "id": 20,
+    "categoria": "Ingeniería Administrativa",
+    "pregunta": "Respecto a la noción de 'sensibilidad social' en contraposición con la 'responsabilidad social', ¿cuál(es) proposición(es) es(son) correcta(s)?",
+    "opciones": [
+      "La sensibilidad social enfatiza los deberes morales teóricos a largo plazo exclusivamente",
+      "La sensibilidad social se centra en la capacidad práctica de responder operativamente a las presiones del entorno",
+      "La sensibilidad social presupone una actitud directiva más reactiva y de acción inmediata frente a demandas comunitarias",
+      "La sensibilidad social anula cualquier necesidad de apegarse a las regulaciones de la ley",
       "Ninguna de las anteriores"
     ],
     "respuestasCorrectas": [
       1,
       2
     ],
-    "explicacion": "La productividad se define como el cociente favorable insumo-producto en un periodo con apego a la calidad, la cual supone simultáneamente efectividad (alcanzar objetivos) y eficiencia (uso óptimo y mínimo de recursos)."
-  },
-  {
-    "id": 19,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "Respecto a la responsabilidad y respuesta social de los administradores, ¿cuál(es) afirmación(es) es(son) correcta(s)?",
-    "opciones": [
-      "La responsabilidad social empresarial considera formalmente el impacto global de las acciones corporativas en la sociedad",
-      "La sensibilidad social refiere a la capacidad y presteza de la empresa para responder con prontitud a las demandas de su entorno",
-      "La teoría administrativa actual circunscribe la responsabilidad social con exclusividad a las empresas mercantiles lucrativas",
-      "El argumento a favor de la intervención social señala que resolver problemas sociales previene la promulgación de regulaciones gubernamentales excesivas",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      1,
-      3
-    ],
-    "explicacion": "La responsabilidad social y la sensibilidad social evalúan el impacto organizacional y la proactividad institucional ante demandas comunitarias. No se limitan a empresas comerciales, pues aplican a universidades, hospitales y dependencias gubernamentales."
-  },
-  {
-    "id": 20,
-    "categoria": "Ingeniería Administrativa",
-    "pregunta": "Es(son) aquel(los) acuerdo(s) o bloque(s) económico(s) regional(es) que persigue(n) el fomento comercial e integración aduanera entre países:",
-    "opciones": [
-      "Tratado de Libre Comercio de América del Norte (TLCAN)",
-      "Unión Europea (UE)",
-      "Asociación de Naciones del Sudeste Asiático (ASEAN)",
-      "Mercado Común del Sur (Mercosur)",
-      "Ninguna de las anteriores"
-    ],
-    "respuestasCorrectas": [
-      0,
-      1,
-      2,
-      3
-    ],
-    "explicacion": "El texto identifica formalmente a la Unión Europea, el TLCAN, ASEAN y Mercosur como las grandes alianzas y bloques comerciales estratégicos en el entorno global contemporáneo."
+    "explicacion": "La sensibilidad social (social responsiveness) acentúa la capacidad práctica, operativa y de respuesta pronta de la corporación para relacionarse con su entorno dinámico frente a reclamos concretos, a diferencia de la conceptualización ética más abstracta de la responsabilidad social formal."
   },
   {
     "id": 21,
