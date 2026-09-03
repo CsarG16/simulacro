@@ -575,11 +575,24 @@ function applyVerifiedOptionStyles(questionIndex, evalResult) {
 // ==========================================================================
 // 7. NAVEGACIÓN Y PALETA DE PREGUNTAS
 // ==========================================================================
+// Función para regresar la vista al inicio de la tarjeta de la pregunta
+function scrollToQuestionTop() {
+  const card = DOM.screenQuiz.querySelector('.viewport-card') || DOM.screenQuiz;
+  if (card) {
+    const yOffset = -16;
+    const y = card.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
 function navigateQuestion(delta) {
   const newIndex = state.currentIndex + delta;
   if (newIndex >= 0 && newIndex < state.questions.length) {
     state.currentIndex = newIndex;
     renderQuestion(state.currentIndex);
+    scrollToQuestionTop();
   }
 }
 
@@ -602,6 +615,7 @@ function renderPalette() {
     btn.addEventListener('click', () => {
       state.currentIndex = idx;
       renderQuestion(idx);
+      scrollToQuestionTop();
     });
 
     DOM.paletteGrid.appendChild(btn);
