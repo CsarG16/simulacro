@@ -5,51 +5,370 @@
       {
         "id": "control-2-clase",
         "nombre": "Control 2 - Teoría de Clase",
-        "descripcion": "Preguntas exclusivas del contenido y teoría dictada por el profesor en clase",
+        "descripcion": "20 preguntas exclusivas del contenido y teoría dictada por el profesor en clase",
         "preguntas": [
           {
             "id": 1,
-            "pregunta": "¿Cuál(es) de los siguientes aspectos fue(ron) enfatizado(s) en clase respecto a la departamentalización moderna en las organizaciones?",
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Cuál(es) de las siguientes operaciones corresponde(n) a las seis funciones básicas de la empresa identificadas formalmente por Henri Fayol?",
             "opciones": [
-              "Transición hacia estructuras matriciales y orientadas a procesos",
-              "Mantenimiento estricto de silos funcionales aislados",
-              "Flexibilidad operativa para adaptarse a la incertidumbre del entorno",
+              "Funciones técnicas (producción de bienes y servicios)",
+              "Funciones comerciales (compra, venta e intercambio)",
+              "Funciones financieras (búsqueda y gerencia de capitales)",
+              "Funciones de seguridad (protección y preservación de bienes y personas)",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "Fayol clasificó las actividades organizacionales en seis funciones esenciales: técnicas, comerciales, financieras, de seguridad, contables y administrativas."
+          },
+          {
+            "id": 2,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En el marco de la teoría clásica de Henri Fayol, ¿cuál(es) es(son) el(los) elemento(s) que integra(n) con exactitud la función administrativa?",
+            "opciones": [
+              "Prever",
+              "Organizar",
+              "Mandar (dirigir) y coordinar",
+              "Controlar",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "Para Fayol, la función administrativa consiste en articular cinco componentes operacionales: prever, organizar, dirigir (mandar), coordinar y controlar."
+          },
+          {
+            "id": 3,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) aquella(s) característica(s) intrínseca(s) que define(n) la naturaleza operativa del proceso administrativo:",
+            "opciones": [
+              "Dinámico: siempre cambia y nunca termina",
+              "Integral: exige el cumplimiento articulado de sus cuatro etapas",
+              "Autorregulado: evalúa desviaciones y aplica medidas correctivas",
+              "Multidisciplinar: requiere la participación de las diversas áreas de la empresa",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "Las diapositivas del curso establecen explícitamente cinco rasgos definitorios del proceso administrativo: dinámico, integral, autorregulado, útil y multidisciplinar."
+          },
+          {
+            "id": 4,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Qué etapas del proceso administrativo componen técnicamente la denominada 'fase mecánica o estructural'?",
+            "opciones": [
+              "Planificación",
+              "Dirección",
+              "Organización",
+              "Control",
               "Ninguna de las anteriores"
             ],
             "respuestasCorrectas": [
               0,
               2
             ],
-            "explicacion": "En la teoría vista en clase, el profesor destacó que las organizaciones contemporáneas priorizan la gestión por procesos y estructuras matriciales, superando la rigidez funcional."
+            "explicacion": "La fase mecánica o estructural del proceso administrativo abarca la planificación ('¿qué se quiere hacer? / ¿qué se va a hacer?') y la organización ('¿cómo se va a hacer?')."
           },
           {
-            "id": 2,
-            "pregunta": "Según lo explicado por el profesor en la sesión teórica, ¿cuál es la diferencia primordial entre autoridad de línea y autoridad de staff?",
+            "id": 5,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En la división conceptual del proceso administrativo, ¿cuál(es) etapa(s) conforma(n) de manera exclusiva la 'fase dinámica u operativa'?",
             "opciones": [
-              "La autoridad de línea tiene poder directo de mando y decisión sobre operaciones clave",
-              "La autoridad de staff es exclusivamente consultiva, de apoyo y asesoramiento",
-              "El staff siempre tiene mayor jerarquía formal de despido que la línea",
+              "Planificación y Organización",
+              "Organización y Dirección",
+              "Dirección y Control",
+              "Control y Planificación",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              2
+            ],
+            "explicacion": "La fase dinámica u operativa agrupa a la dirección ('verificar que se haga') y al control ('¿cómo se ha realizado?')."
+          },
+          {
+            "id": 6,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En el nivel de la empresa denominado institucional, ¿cuál(es) es(son) característica(s) primordial(es) del diseño organizacional?",
+            "opciones": [
+              "Diferenciación de unidades",
+              "Formalización mediante reglas y procedimientos",
+              "Centralización en la toma de decisiones",
+              "Integración",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "En el nivel institucional, el diseño organizacional se enfoca en la superestructura y contiene cuatro propiedades clave: diferenciación, formalización, centralización e integración."
+          },
+          {
+            "id": 7,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) considerado(s) tipo(s) de departamentalización aplicable(s) al nivel intermedio de la estructura organizativa:",
+            "opciones": [
+              "Departamentalización funcional",
+              "Departamentalización por base territorial o geográfica",
+              "Departamentalización por clientela",
+              "Departamentalización por proyectos o procesos",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "La estructura departamental clasifica divisiones por función, productos/servicios, geografía/territorio, clientes, procesos y proyectos."
+          },
+          {
+            "id": 8,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Cuál(es) de los siguientes aspectos corresponde(n) a la especificación técnica en el diseño de cargos y tareas a nivel operacional?",
+            "opciones": [
+              "Especificar el contenido formal de la tarea a desempeñar",
+              "Especificar el método sistemático para realizarla",
+              "Combinar armónicamente las tareas en un cargo determinado",
+              "Dictar la política arancelaria exterior de la organización",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2
+            ],
+            "explicacion": "El diseño de puestos a nivel operacional se orienta al contenido de las tareas, la metodología de ejecución y la integración en cargos específicos bajo enfoques clásico, humanista, situacional o sociotécnico."
+          },
+          {
+            "id": 9,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Respecto a la función y naturaleza del organigrama, ¿cuál(es) afirmación(es) es(son) correcta(s)?",
+            "opciones": [
+              "Representa gráficamente, de modo total o parcial, la estructura orgánica formal de una entidad",
+              "Refleja el conjunto de relaciones que existen entre las unidades o sectores que la componen",
+              "Es el instrumento técnico análogo al plano constructivo para estructurar materialmente una empresa",
+              "Muestra detalladamente todas las relaciones informales y afectivas espontáneas del personal",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2
+            ],
+            "explicacion": "El organigrama formaliza la arquitectura funcional y jerárquica de la entidad (comparado en clase con el plano de una edificación). Los vínculos informales no forman parte del organigrama formal."
+          },
+          {
+            "id": 10,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Cuál(es) dimensión(es) integra(n) el marco analítico del macroentorno empresarial bajo la metodología PESTE?",
+            "opciones": [
+              "Dimensión Política y Legal",
+              "Dimensión Económica",
+              "Dimensión Sociocultural",
+              "Dimensión Tecnológica y Ecológica",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "La herramienta PESTE evalúa el macroentorno considerando las dimensiones Política y legal, Económica, Sociocultural, Tecnológica y Ecológica."
+          },
+          {
+            "id": 11,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) aquella(s) fuerza(s) competitiva(s) que forma(n) parte del modelo analítico de la industria propuesto por Michael Porter:",
+            "opciones": [
+              "Amenaza de nuevos entrantes",
+              "Poder de negociación de los proveedores",
+              "Poder de negociación de los clientes o compradores",
+              "Amenaza de productos o servicios sustitutos",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "El marco estructural de Porter analiza cinco fuerzas: competidores del sector (rivalidad), amenaza de entrantes, poder de proveedores, poder de clientes y amenaza de sustitutos."
+          },
+          {
+            "id": 12,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Dentro del análisis de las fuerzas competitivas de Porter, ¿cuál(es) constituye(n) una barrera de entrada que condiciona la 'amenaza de nuevos entrantes'?",
+            "opciones": [
+              "Economías de escala por el lado de la oferta",
+              "Altos costes de cambio para los clientes (switching costs)",
+              "Requisitos significativos de capital inicial",
+              "Acceso restringido o desigual a los canales de distribución",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "Las diapositivas del curso enumeran como barreras directas a nuevos competidores: economías de escala de oferta, beneficios de escala de demanda, costos de cambio, requerimientos de capital, acceso a canales y políticas oficiales restrictivas."
+          },
+          {
+            "id": 13,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿En qué circunstancia(s) específica(s) se incrementa de manera considerable el 'poder de negociación de los proveedores'?",
+            "opciones": [
+              "Cuando la oferta del insumo está concentrada en pocos proveedores",
+              "Cuando existen productos sustitutos idénticos y ampliamente disponibles",
+              "Cuando los proveedores suministran productos diferenciados con altos costes de cambio",
+              "Cuando los proveedores presentan una amenaza creíble de integración vertical hacia adelante",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              2,
+              3
+            ],
+            "explicacion": "Los proveedores ganan fuerza si están concentrados, sus insumos son diferenciados, no tienen sustitutos sustitutivos inmediatos o amenazan con integrarse hacia adelante en la cadena."
+          },
+          {
+            "id": 14,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En la evaluación estratégica interna, ¿qué áreas funcionales clave conforman el acrónimo del diagnóstico interno AMOFHIT?",
+            "opciones": [
+              "Administración y Marketing",
+              "Operaciones / Logística y Finanzas / Contabilidad",
+              "Recursos Humanos y Sistemas de Información",
+              "Investigación y Desarrollo (Tecnología)",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "El diagnóstico AMOFHIT analiza internamente: Administración, Marketing, Operaciones/logística, Finanzas/contabilidad, Recursos Humanos, Sistemas de Información e Investigación y Desarrollo."
+          },
+          {
+            "id": 15,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) aquel(los) elemento(s) que define(n) el propósito esencial de la 'visión' dentro del planeamiento estratégico corporativo:",
+            "opciones": [
+              "Responde a la pregunta fundamental: ¿cuál es nuestro negocio actual?",
+              "Determina la dirección de la compañía contestando la pregunta: ¿qué queremos llegar a ser?",
+              "Especifica de forma inmediata el cálculo matemático de las liquidaciones de planilla",
+              "Constituye un inventario físico exhaustivo de repuestos mecánicos",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              1
+            ],
+            "explicacion": "La visión fija el horizonte rector de la organización respondiendo a la interrogante '¿qué queremos llegar a ser?', a diferencia de la misión que cuestiona '¿cuál es nuestro negocio?'."
+          },
+          {
+            "id": 16,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "De acuerdo con el modelo de desarrollo de una 'Misión Superior', ¿cuál(es) pregunta(s) debe(n) responderse formalmente para estructurar su redacción?",
+            "opciones": [
+              "¿Qué bienes o servicios brindamos y cuál es su propuesta de valor?",
+              "¿Quiénes son nuestros clientes y en qué ámbito o localización se encuentran?",
+              "¿Contamos con algún proceso, tecnología relevante o perfil de formación de nuestro personal?",
+              "¿Cómo es nuestro entorno laboral y cuál es el impacto socioambiental que perseguimos?",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "La estructura metodológica de misión superior revisada en clase consta de 7 preguntas: bienes brindados, clientes/ubicación, propuesta de valor, procesos/tecnología, perfil de personal, clima laboral/valores e impacto social/ambiental."
+          },
+          {
+            "id": 17,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Respecto a la fase de 'Planeación Operacional' abordada en la primera función del proceso administrativo, ¿cuál(es) es(son) su(s) foco(s) de concentración?",
+            "opciones": [
+              "Ejecución directa de tareas y operaciones cotidianas",
+              "Optimización y maximización de resultados de corto alcance",
+              "Definición y aplicación de procedimientos y estándares de eficiencia",
+              "Formulación de la superestructura y diseño societario para el próximo decenio",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2
+            ],
+            "explicacion": "La planeación operacional se ocupa del día a día: ejecución de tareas, procedimientos detallados y búsqueda de eficiencia operativa. Las decisiones decenales de superestructura pertenecen al nivel corporativo/institucional."
+          },
+          {
+            "id": 18,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) aquella(s) cualidad(es) que distingue(n) formalmente a la 'organización matricial' dentro de las estructuras de departamentalización:",
+            "opciones": [
+              "La combinación simultánea de patrones de departamentalización funcional y de proyecto o producto",
+              "La existencia de líneas dobles de mando y dependencia jerárquica",
+              "La supresión definitiva de los departamentos funcionales técnicos",
+              "Un modelo aplicable exclusivamente a negocios que operan sin recurrir al uso de tecnologías de la información",
               "Ninguna de las anteriores"
             ],
             "respuestasCorrectas": [
               0,
               1
             ],
-            "explicacion": "La línea ejerce la cadena de mando directa sobre las metas operativas sustantivas, mientras que el staff proporciona asistencia técnica, análisis y recomendaciones sin subordinar directamente a las unidades de línea."
+            "explicacion": "La organización matricial (o de cuadrícula) superpone estructuras de proyectos/productos a departamentos funcionales preexistentes, generando flujos de autoridad compartida o doble mando."
           },
           {
-            "id": 3,
-            "pregunta": "¿Qué criterio central define el 'tramo de control' (span of management) discutido en clase?",
+            "id": 19,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Al realizar la matriz de análisis sectorial en un taller automotriz, si se determina que la adquisición masiva de neumáticos reduce costes unitarios, ¿a qué variable y calificación corresponde técnicamente según la cátedra?",
             "opciones": [
-              "El número de subordinados directos que un gerente puede supervisar con eficacia",
-              "La cantidad de presupuesto financiero asignado a un departamento",
-              "El número total de niveles jerárquicos entre el operario y el director general",
+              "Economía de escala por el lado de la oferta / Amenaza de nivel bajo (Oportunidad)",
+              "Poder de negociación de clientes / Amenaza de nivel alto",
+              "Inexistencia de sucedáneos / Debilidad operacional severa",
+              "Diferenciación de materias primas / Fortaleza interna",
               "Ninguna de las anteriores"
             ],
             "respuestasCorrectas": [
               0
             ],
-            "explicacion": "El tramo de control se refiere expresamente al número de personas o subordinados que reportan directamente a un supervisor o directivo determinado."
+            "explicacion": "En el caso práctico analizado en las presentaciones, la reducción de costes unitarios en venta de llantas corresponde a 'Economía de escala por el lado de la oferta' dentro de Nuevos Entrantes, tipificada como amenaza de nivel bajo (oportunidad)."
+          },
+          {
+            "id": 20,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) aquella(s) premisa(s) inherente(s) al flujo y diagnóstico funcional interno de una organización:",
+            "opciones": [
+              "El planeamiento estratégico es un proceso interactivo que requiere coordinación efectiva interfuncional",
+              "Todas las organizaciones poseen fortalezas y limitaciones distribuidas de forma asimétrica entre sus áreas de negocio",
+              "El diagnóstico interno posibilita fijar con exactitud los recursos disponibles y evaluar las relaciones entre áreas",
+              "Ninguna empresa es igualmente fuerte ni igualmente débil en todas sus funciones",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "Las diapositivas destacan que la planeación estratégica es un sistema interactivo e integral, y que las empresas manifiestan capacidades dispares entre sus distintas áreas operativas y de soporte."
           }
         ]
       },
