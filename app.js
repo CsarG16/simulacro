@@ -35,7 +35,6 @@ const DOM = {
   selectExam: document.getElementById('selectExam'),
   selectQuantity: document.getElementById('selectQuantity'),
   selectTime: document.getElementById('selectTime'),
-  selectShuffle: document.getElementById('selectShuffle'),
   examInfoBox: document.getElementById('examInfoBox'),
   examInfoTitle: document.getElementById('examInfoTitle'),
   examInfoDesc: document.getElementById('examInfoDesc'),
@@ -463,20 +462,20 @@ function startQuiz() {
     return;
   }
 
-  // Barajar si está activado
-  const shouldShuffle = DOM.selectShuffle.value === 'yes';
-  if (shouldShuffle) {
-    pool = shuffleArray(pool);
-  }
+  // 1. Barajar SIEMPRE el orden de las preguntas
+  pool = shuffleArray(pool);
 
-  // Limitar cantidad
-  const qtyVal = DOM.selectQuantity.value;
+  // 2. Limitar cantidad según la opción seleccionada
+  const qtyVal = DOM.selectQuantity ? DOM.selectQuantity.value : 'all';
   const maxQty = qtyVal === 'all' ? pool.length : Math.min(parseInt(qtyVal, 10), pool.length);
-  state.questions = pool.slice(0, maxQty);
+  const selectedPool = pool.slice(0, maxQty);
 
-  // Asegurar metadata por pregunta
-  state.questions.forEach(q => {
-    q.categoria = displayCategory;
+  // 3. Barajar SIEMPRE las alternativas (A, B, C, D) de cada pregunta
+  // recalculando automáticamente los índices de respuestasCorrectas
+  state.questions = selectedPool.map(q => {
+    const shuffledQ = shuffleQuestionOptions(q);
+    shuffledQ.categoria = displayCategory;
+    return shuffledQ;
   });
 
   // Reiniciar variables de evaluación
@@ -511,6 +510,58 @@ function shuffleArray(arr) {
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
+}
+
+/**
+ * Baraja aleatoriamente las opciones de una pregunta (A, B, C, D, E)
+ * - Mantiene al final opciones ancla fijas como "Ninguna de las anteriores" o "Todas las anteriores"
+ * - Recalcula dinámicamente los índices de respuestasCorrectas a sus nuevas posiciones
+ */
+function shuffleQuestionOptions(q) {
+  if (!q.opciones || q.opciones.length <= 1) {
+    return { ...q };
+  }
+
+  const originalOptions = q.opciones.map((text, originalIndex) => ({
+    text,
+    originalIndex
+  }));
+
+  const originalCorrect = Array.isArray(q.respuestasCorrectas)
+    ? q.respuestasCorrectas
+    : [q.respuestasCorrectas];
+
+  // Detectar alternativas que semánticamente deben quedar siempre al final
+  const anchorRegex = /^(ninguna|todas|ninguno|todos)\s+(de\s+las\s+anteriores|de\s+los\s+anteriores|de\s+ellas|de\s+ellos)/i;
+  const lastOpt = originalOptions[originalOptions.length - 1];
+  const hasAnchorAtEnd = originalOptions.length > 2 && anchorRegex.test(lastOpt.text.trim());
+
+  let toShuffle = [];
+  let endAnchor = null;
+
+  if (hasAnchorAtEnd) {
+    toShuffle = originalOptions.slice(0, originalOptions.length - 1);
+    endAnchor = lastOpt;
+  } else {
+    toShuffle = [...originalOptions];
+  }
+
+  toShuffle = shuffleArray(toShuffle);
+  const finalOptions = endAnchor ? [...toShuffle, endAnchor] : toShuffle;
+
+  // Mapear los nuevos índices de las respuestas correctas
+  const newCorrectIndices = [];
+  finalOptions.forEach((item, newIndex) => {
+    if (originalCorrect.includes(item.originalIndex)) {
+      newCorrectIndices.push(newIndex);
+    }
+  });
+
+  return {
+    ...q,
+    opciones: finalOptions.map(o => o.text),
+    respuestasCorrectas: newCorrectIndices.sort((a, b) => a - b)
+  };
 }
 
 // ==========================================================================
