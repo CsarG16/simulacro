@@ -433,6 +433,74 @@ body {
   border-color: var(--border-focus);
 }
 
+.form-field.full-width {
+  grid-column: span 2;
+}
+
+@media (max-width: 640px) {
+  .form-field.full-width {
+    grid-column: span 1;
+  }
+}
+
+/* Active Exam Meta Info Card */
+.editorial-exam-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--text-pure);
+  border-radius: 2px;
+  animation: editorialFadeIn 0.3s ease;
+}
+
+.exam-meta-icon {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.exam-meta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+
+.exam-meta-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-pure);
+  text-transform: uppercase;
+}
+
+.exam-meta-desc {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.exam-meta-pill {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 0.65rem;
+  background: var(--bg-surface-active);
+  border: 1px solid var(--border-subtle);
+  border-radius: 2px;
+  color: var(--text-pure);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* Mode Selector Editorial Block */
 .mode-selector-block {
   display: flex;

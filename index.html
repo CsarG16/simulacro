@@ -68,35 +68,39 @@
           <!-- Configuration Grid -->
           <div class="editorial-form">
             <div class="form-grid">
-              <!-- Materia -->
+              <!-- 01. Curso -->
               <div class="form-field">
-                <label for="selectCategory">MATERIA / CATEGORÍA</label>
+                <label for="selectCourse">01. CURSO / ASIGNATURA</label>
                 <div class="input-wrapper">
-                  <select id="selectCategory" class="editorial-select">
-                    <option value="todas">Todas las materias</option>
+                  <select id="selectCourse" class="editorial-select">
+                    <option value="">Cargando cursos...</option>
                   </select>
                 </div>
               </div>
 
-              <!-- Cantidad -->
+              <!-- 02. Examen -->
               <div class="form-field">
-                <label for="selectQuantity">CANTIDAD DE PREGUNTAS</label>
+                <label for="selectExam">02. EXAMEN / EVALUACIÓN</label>
+                <div class="input-wrapper">
+                  <select id="selectExam" class="editorial-select">
+                    <option value="">Selecciona un curso</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 03. Cantidad -->
+              <div class="form-field">
+                <label for="selectQuantity">03. CANTIDAD DE PREGUNTAS</label>
                 <div class="input-wrapper">
                   <select id="selectQuantity" class="editorial-select">
-                    <option value="5">5 PREGUNTAS (EXPRÉS)</option>
-                    <option value="10">10 PREGUNTAS</option>
-                    <option value="20">20 PREGUNTAS</option>
-                    <option value="30">30 PREGUNTAS</option>
-                    <option value="40">40 PREGUNTAS</option>
-                    <option value="50">50 PREGUNTAS</option>
-                    <option value="all" selected>TODAS LAS DISPONIBLES (60)</option>
+                    <option value="all" selected>Todas las disponibles</option>
                   </select>
                 </div>
               </div>
 
-              <!-- Tiempo -->
+              <!-- 04. Tiempo -->
               <div class="form-field">
-                <label for="selectTime">LÍMITE DE TIEMPO</label>
+                <label for="selectTime">04. LÍMITE DE TIEMPO</label>
                 <div class="input-wrapper">
                   <select id="selectTime" class="editorial-select">
                     <option value="0">SIN LÍMITE</option>
@@ -111,16 +115,28 @@
                 </div>
               </div>
 
-              <!-- Orden -->
-              <div class="form-field">
-                <label for="selectShuffle">ORDEN DE PREGUNTAS</label>
+              <!-- 05. Orden -->
+              <div class="form-field full-width">
+                <label for="selectShuffle">05. ORDEN DE PREGUNTAS</label>
                 <div class="input-wrapper">
                   <select id="selectShuffle" class="editorial-select">
                     <option value="yes" selected>ALEATORIO (MEZCLAR)</option>
-                    <option value="no">SECUENCIAL</option>
+                    <option value="no">SECUENCIAL (ORDEN ORIGINAL)</option>
                   </select>
                 </div>
               </div>
+            </div>
+
+            <!-- Active Exam Meta Info Card -->
+            <div id="examInfoBox" class="editorial-exam-meta" style="display: none;">
+              <div class="exam-meta-icon">
+                <i data-feather="book-open"></i>
+              </div>
+              <div class="exam-meta-text">
+                <span id="examInfoTitle" class="exam-meta-title"></span>
+                <span id="examInfoDesc" class="exam-meta-desc"></span>
+              </div>
+              <div id="examInfoCount" class="exam-meta-pill"></div>
             </div>
 
             <!-- Modalidad Selector -->

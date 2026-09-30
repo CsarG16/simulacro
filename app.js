@@ -7,8 +7,11 @@
  */
 
 // Estado global de la aplicación
+// Estado global de la aplicación
 const state = {
-  questions: [],          // Preguntas cargadas para la sesión actual
+  courses: [],            // Catálogo jerárquico: [ { curso, examenes: [ { id, nombre, descripcion, preguntas } ] } ]
+  selectedCourse: null,   // Curso activo seleccionado en la interfaz
+  questions: [],          // Preguntas cargadas para la sesión actual del simulacro
   currentIndex: 0,        // Índice de la pregunta activa (0 a N-1)
   userAnswers: {},        // Mapa: { [questionIndex]: [selectedOptionIndices] }
   verifiedQuestions: {},  // Mapa: { [questionIndex]: evalResult } cuando el usuario da clic en "Verificar"
@@ -27,11 +30,16 @@ const DOM = {
   screenQuiz: document.getElementById('screenQuiz'),
   screenResults: document.getElementById('screenResults'),
 
-  // Configuración
-  selectCategory: document.getElementById('selectCategory'),
+  // Configuración de Curso y Examen
+  selectCourse: document.getElementById('selectCourse'),
+  selectExam: document.getElementById('selectExam'),
   selectQuantity: document.getElementById('selectQuantity'),
   selectTime: document.getElementById('selectTime'),
   selectShuffle: document.getElementById('selectShuffle'),
+  examInfoBox: document.getElementById('examInfoBox'),
+  examInfoTitle: document.getElementById('examInfoTitle'),
+  examInfoDesc: document.getElementById('examInfoDesc'),
+  examInfoCount: document.getElementById('examInfoCount'),
   modeOptions: document.querySelectorAll('.mode-option'),
   btnStartQuiz: document.getElementById('btnStartQuiz'),
 
@@ -92,9 +100,9 @@ const DOM = {
 // ==========================================================================
 // 1. INICIALIZACIÓN
 // ==========================================================================
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   initTheme();
-  populateCategories();
+  await initData();
   bindEvents();
 });
 
@@ -117,23 +125,241 @@ function toggleTheme() {
   updateThemeIcon();
 }
 
-// Cargar categorías disponibles dinámicamente desde preguntas.js
-function populateCategories() {
-  if (typeof bancoPreguntas === 'undefined' || !Array.isArray(bancoPreguntas)) {
-    console.error('El banco de preguntas no se encuentra cargado.');
+// Carga asíncrona de datos desde preguntas.json o preguntas.js
+async function initData() {
+  let rawData = null;
+
+  // 1. Intentar cargar desde preguntas.json (si se sirve mediante HTTP / Live Server)
+  try {
+    const res = await fetch('preguntas.json', { cache: 'no-cache' });
+    if (res.ok) {
+      rawData = await res.json();
+    }
+  } catch (err) {
+    // Si está en file:/// u offline, utiliza el script preguntas.js
+  }
+
+  // 2. Si no se cargó vía fetch, usar las variables globales de preguntas.js
+  if (!rawData || !Array.isArray(rawData) || rawData.length === 0) {
+    if (typeof bancoCursos !== 'undefined' && Array.isArray(bancoCursos)) {
+      rawData = bancoCursos;
+    } else if (typeof bancoPreguntas !== 'undefined' && Array.isArray(bancoPreguntas)) {
+      rawData = bancoPreguntas;
+    }
+  }
+
+  // 3. Normalizar datos (soporta tanto Curso -> Exámenes como listas planas)
+  state.courses = parseCoursesData(rawData);
+
+  if (state.courses.length === 0) {
+    console.warn('No se encontraron cursos en el banco de datos.');
+    if (DOM.selectCourse) {
+      DOM.selectCourse.innerHTML = '<option value="">No hay cursos registrados</option>';
+    }
     return;
   }
 
-  const categories = [...new Set(bancoPreguntas.map(q => q.categoria).filter(Boolean))];
-  DOM.selectCategory.innerHTML = '<option value="todas">Todas las materias (' + bancoPreguntas.length + ' preguntas)</option>';
-  
-  categories.forEach(cat => {
-    const count = bancoPreguntas.filter(q => q.categoria === cat).length;
-    const option = document.createElement('option');
-    option.value = cat;
-    option.textContent = `${cat} (${count})`;
-    DOM.selectCategory.appendChild(option);
+  populateCourseSelector();
+}
+
+// Convierte cualquier formato de datos al modelo: Curso -> Exámenes -> Preguntas
+function parseCoursesData(data) {
+  if (!Array.isArray(data)) return [];
+
+  // Formato ya jerárquico: [ { curso: '...', examenes: [ ... ] } ]
+  if (data.length > 0 && data[0].curso && Array.isArray(data[0].examenes)) {
+    return data.map(c => ({
+      curso: c.curso,
+      examenes: c.examenes.map(ex => ({
+        id: ex.id || slugify(ex.nombre),
+        nombre: ex.nombre || 'Examen',
+        descripcion: ex.descripcion || `Preguntas de ${c.curso}`,
+        preguntas: (ex.preguntas || []).map((q, idx) => ({
+          ...q,
+          id: q.id !== undefined ? q.id : idx + 1,
+          curso: c.curso,
+          examen: ex.nombre
+        }))
+      }))
+    }));
+  }
+
+  // Formato plano anterior: [ { id: 1, categoria: '...', pregunta: '...' } ]
+  const coursesMap = new Map();
+  data.forEach((q, idx) => {
+    const courseName = q.curso || q.categoria || 'General';
+    const examName = q.examen || 'Examen General';
+    const examId = slugify(examName);
+
+    if (!coursesMap.has(courseName)) {
+      coursesMap.set(courseName, new Map());
+    }
+
+    const examsMap = coursesMap.get(courseName);
+    if (!examsMap.has(examId)) {
+      examsMap.set(examId, {
+        id: examId,
+        nombre: examName,
+        descripcion: `Preguntas de ${courseName}`,
+        preguntas: []
+      });
+    }
+
+    examsMap.get(examId).preguntas.push({
+      ...q,
+      id: q.id !== undefined ? q.id : idx + 1,
+      curso: courseName,
+      examen: examName
+    });
   });
+
+  const parsed = [];
+  coursesMap.forEach((examsMap, courseName) => {
+    parsed.push({
+      curso: courseName,
+      examenes: Array.from(examsMap.values())
+    });
+  });
+
+  return parsed;
+}
+
+function slugify(text) {
+  return String(text || '')
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// Llena el selector de Cursos
+function populateCourseSelector() {
+  if (!DOM.selectCourse) return;
+  DOM.selectCourse.innerHTML = '';
+
+  state.courses.forEach(c => {
+    const totalQ = c.examenes.reduce((acc, ex) => acc + ex.preguntas.length, 0);
+    const opt = document.createElement('option');
+    opt.value = c.curso;
+    const examCount = c.examenes.length;
+    opt.textContent = `${c.curso} (${totalQ} preguntas en ${examCount} examen${examCount > 1 ? 'es' : ''})`;
+    DOM.selectCourse.appendChild(opt);
+  });
+
+  if (state.courses.length > 0) {
+    DOM.selectCourse.value = state.courses[0].curso;
+    onCourseChange();
+  }
+}
+
+// Al cambiar de curso, se actualizan sus exámenes
+function onCourseChange() {
+  const courseName = DOM.selectCourse.value;
+  const course = state.courses.find(c => c.curso === courseName);
+  if (!course) return;
+
+  state.selectedCourse = course;
+  populateExamSelector(course);
+}
+
+// Llena el selector de Exámenes exclusivo para el curso seleccionado
+function populateExamSelector(course) {
+  if (!DOM.selectExam) return;
+  DOM.selectExam.innerHTML = '';
+
+  // Cada examen individual del curso
+  course.examenes.forEach(ex => {
+    const opt = document.createElement('option');
+    opt.value = ex.id;
+    opt.textContent = `${ex.nombre} (${ex.preguntas.length} preguntas)`;
+    DOM.selectExam.appendChild(opt);
+  });
+
+  // Si tiene más de un examen, opción de combinarlos todos
+  if (course.examenes.length > 1) {
+    const allOpt = document.createElement('option');
+    allOpt.value = '__ALL__';
+    const totalQ = course.examenes.reduce((acc, ex) => acc + ex.preguntas.length, 0);
+    allOpt.textContent = `⚡ Todos los exámenes de ${course.curso} (${totalQ} preguntas)`;
+    DOM.selectExam.appendChild(allOpt);
+  }
+
+  if (course.examenes.length > 0) {
+    DOM.selectExam.value = course.examenes[0].id;
+  }
+
+  onExamChange();
+}
+
+// Al cambiar el examen, se actualiza el resumen informativo y las cantidades disponibles
+function onExamChange() {
+  if (!state.selectedCourse || !DOM.selectExam) return;
+
+  const examId = DOM.selectExam.value;
+  let pool = [];
+  let examTitle = '';
+  let examDesc = '';
+
+  if (examId === '__ALL__') {
+    state.selectedCourse.examenes.forEach(ex => pool.push(...ex.preguntas));
+    examTitle = `${state.selectedCourse.curso} • Todos los Exámenes`;
+    examDesc = 'Sesión combinada con todas las evaluaciones disponibles de este curso.';
+  } else {
+    const exam = state.selectedCourse.examenes.find(ex => ex.id === examId);
+    if (exam) {
+      pool = exam.preguntas;
+      examTitle = `${state.selectedCourse.curso} // ${exam.nombre}`;
+      examDesc = exam.descripcion || 'Preguntas exclusivas de esta evaluación.';
+    }
+  }
+
+  // Actualizar tarjeta de información visual
+  if (DOM.examInfoBox) {
+    if (pool.length > 0) {
+      DOM.examInfoBox.style.display = 'flex';
+      if (DOM.examInfoTitle) DOM.examInfoTitle.textContent = examTitle;
+      if (DOM.examInfoDesc) DOM.examInfoDesc.textContent = examDesc;
+      if (DOM.examInfoCount) DOM.examInfoCount.textContent = `${pool.length} PREGUNTAS`;
+      if (window.feather) feather.replace();
+    } else {
+      DOM.examInfoBox.style.display = 'none';
+    }
+  }
+
+  // Actualizar el selector de cantidad de preguntas
+  updateQuantityOptions(pool.length);
+}
+
+// Genera dinámicamente opciones de cantidad adaptadas a las preguntas del examen
+function updateQuantityOptions(totalAvailable) {
+  if (!DOM.selectQuantity) return;
+  DOM.selectQuantity.innerHTML = '';
+
+  if (totalAvailable <= 0) {
+    const opt = document.createElement('option');
+    opt.value = '0';
+    opt.textContent = 'Sin preguntas disponibles';
+    DOM.selectQuantity.appendChild(opt);
+    return;
+  }
+
+  const steps = [5, 10, 15, 20, 30, 40, 50];
+  steps.forEach(step => {
+    if (totalAvailable > step) {
+      const opt = document.createElement('option');
+      opt.value = String(step);
+      opt.textContent = `${step} PREGUNTAS`;
+      DOM.selectQuantity.appendChild(opt);
+    }
+  });
+
+  // Opción "Todas las disponibles" predeterminada
+  const allOpt = document.createElement('option');
+  allOpt.value = 'all';
+  allOpt.textContent = `TODAS LAS DISPONIBLES (${totalAvailable})`;
+  allOpt.selected = true;
+  DOM.selectQuantity.appendChild(allOpt);
 }
 
 // ==========================================================================
@@ -142,6 +368,14 @@ function populateCategories() {
 function bindEvents() {
   // Cambio de tema
   DOM.themeToggleBtn.addEventListener('click', toggleTheme);
+
+  // Cambio interactivo de curso y examen
+  if (DOM.selectCourse) {
+    DOM.selectCourse.addEventListener('change', onCourseChange);
+  }
+  if (DOM.selectExam) {
+    DOM.selectExam.addEventListener('change', onExamChange);
+  }
 
   // Selector de modo (Examen vs Práctica)
   DOM.modeOptions.forEach(opt => {
@@ -174,7 +408,7 @@ function bindEvents() {
 
   // Acciones en Resultados
   DOM.btnRestartQuiz.addEventListener('click', () => {
-    startQuiz(); // Reinicia con la misma configuración
+    startQuiz(); // Reinicia con el mismo examen y configuración
   });
   DOM.btnNewQuiz.addEventListener('click', () => {
     showScreen(DOM.screenConfig);
@@ -204,19 +438,28 @@ function showScreen(screenElement) {
 // 4. INICIO Y PREPARACIÓN DEL SIMULACRO
 // ==========================================================================
 function startQuiz() {
-  if (typeof bancoPreguntas === 'undefined' || bancoPreguntas.length === 0) {
-    alert('Tu banco de preguntas está vacío.\nPega las preguntas generadas en el archivo preguntas.js para comenzar tu simulacro.');
+  if (!state.selectedCourse) {
+    alert('Por favor selecciona un curso.');
     return;
   }
 
-  // Filtrar por categoría seleccionada
-  const selectedCat = DOM.selectCategory.value;
-  let pool = selectedCat === 'todas'
-    ? [...bancoPreguntas]
-    : bancoPreguntas.filter(q => q.categoria === selectedCat);
+  const examId = DOM.selectExam ? DOM.selectExam.value : '';
+  let pool = [];
+  let displayCategory = '';
+
+  if (examId === '__ALL__') {
+    state.selectedCourse.examenes.forEach(ex => pool.push(...ex.preguntas));
+    displayCategory = `${state.selectedCourse.curso} • Todos los Exámenes`;
+  } else {
+    const exam = state.selectedCourse.examenes.find(ex => ex.id === examId);
+    if (exam) {
+      pool = [...exam.preguntas];
+      displayCategory = `${state.selectedCourse.curso} • ${exam.nombre}`;
+    }
+  }
 
   if (pool.length === 0) {
-    alert('No se encontraron preguntas en esta categoría.');
+    alert('No se encontraron preguntas en este examen. Abre preguntas.js para registrar preguntas.');
     return;
   }
 
@@ -231,7 +474,12 @@ function startQuiz() {
   const maxQty = qtyVal === 'all' ? pool.length : Math.min(parseInt(qtyVal, 10), pool.length);
   state.questions = pool.slice(0, maxQty);
 
-  // Reiniciar variables
+  // Asegurar metadata por pregunta
+  state.questions.forEach(q => {
+    q.categoria = displayCategory;
+  });
+
+  // Reiniciar variables de evaluación
   state.currentIndex = 0;
   state.userAnswers = {};
   state.verifiedQuestions = {};
