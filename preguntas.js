@@ -15,7 +15,7 @@ const bancoCursos = [
       {
         "id": "control-2-clase",
         "nombre": "Control 2 - Teoría de Clase",
-        "descripcion": "20 preguntas exclusivas del contenido y teoría dictada por el profesor en clase",
+        "descripcion": "40 preguntas exclusivas del contenido y teoría dictada por el profesor en clase",
         "preguntas": [
           {
             "id": 1,
@@ -379,6 +379,354 @@ const bancoCursos = [
               3
             ],
             "explicacion": "Las diapositivas destacan que la planeación estratégica es un sistema interactivo e integral, y que las empresas manifiestan capacidades dispares entre sus distintas áreas operativas y de soporte."
+          },
+          {
+            "id": 21,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Cuál(es) de los siguientes elementos compone(n) el Sistema de Gestión Estratégica bajo la metodología presentada por el docente?",
+            "opciones": [
+              "Planeamiento Estratégico Corporativo",
+              "Balanced Scorecard Corporativo",
+              "Alineamiento de la Estrategia de la Organización",
+              "Cultura de ejecución basada en la Gestión por Competencias",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "El Sistema de Gestión Estratégica expuesto en las diapositivas integra seis componentes articulares: Planeamiento Estratégico Corporativo, Balanced Scorecard Corporativo, Alineamiento de la Estrategia, Cultura de ejecución por Competencias, Gestión por Indicadores y Financiamiento de la Estrategia."
+          },
+          {
+            "id": 22,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En la secuencia metodológica del Balanced Scorecard (BSC), ¿cuál(es) es(son) la(s) herramienta(s) previa(s) para operativizar la cultura de ejecución?",
+            "opciones": [
+              "Mapa Estratégico",
+              "Matriz Tablero de Comando",
+              "Software de gestión",
+              "Estatuto societario notarial",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2
+            ],
+            "explicacion": "El flujo metodológico del BSC parte del Mapa Estratégico, se traslada a la Matriz Tablero de Comando y se instrumentaliza mediante Software para desplegar la cultura de ejecución basada en competencias."
+          },
+          {
+            "id": 23,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) considerado(s) nivel(es) o anillo(s) concéntrico(s) de influencia del entorno sobre la organización en el análisis del contexto empresarial:",
+            "opciones": [
+              "Macrotendencias",
+              "Entorno Indirecto (Macroentorno)",
+              "Entorno Directo (Microentorno)",
+              "Organización",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "El esquema de capas del entorno propuesto en el curso ubica a la Organización en el núcleo central, rodeada sucesivamente por el Entorno Directo, el Entorno Indirecto y, en la capa exterior directriz global, las Macrotendencias."
+          },
+          {
+            "id": 24,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Cómo se define conceptualmente a las 'Macrotendencias' en el análisis estratégico del contexto de la empresa?",
+            "opciones": [
+              "Manuales operativos de contingencia inmediata para talleres",
+              "Fuerzas directrices a nivel global que afectarán significativamente a la empresa con el paso del tiempo",
+              "Presupuestos semestrales de compras operativas",
+              "Contratos colectivos de trabajo a nivel de planta",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              1
+            ],
+            "explicacion": "Las diapositivas definen a las Macrotendencias textualmente como 'fuerzas directrices a nivel global, las cuales nos afectarán significativamente con el paso del tiempo'."
+          },
+          {
+            "id": 25,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Al analizar la fuerza de 'Nuevos Entrantes' según el modelo industrial, ¿cuál(es) factor(es) actúa(n) como barrera(s) o limitante(s) de acceso?",
+            "opciones": [
+              "Beneficio de escala por el lado de la demanda (efecto red)",
+              "Coste de cambio para los clientes (switching costs)",
+              "Ventajas de las empresas establecidas independientemente de su tamaño",
+              "Reacción esperada de los competidores existentes",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "Todos los elementos listados forman parte de la relación de barreras de entrada analizadas en las diapositivas de la fuerza Nuevos Entrantes de Michael Porter."
+          },
+          {
+            "id": 26,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Bajo qué condición(es) específica(s) se debilita o disminuye el poder de negociación de los proveedores en un sector industrial?",
+            "opciones": [
+              "Cuando los insumos provistos carecen por completo de productos sustitutos o sucedáneos",
+              "Cuando los proveedores dependen fuertemente del sector industrial para sus ventas totales",
+              "Cuando cambiar de un proveedor a otro no genera costes significativos para la empresa compradora",
+              "Cuando la oferta se encuentra concentrada en un monopolio internacional",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              1,
+              2
+            ],
+            "explicacion": "El poder de los proveedores se reduce cuando dependen de los ingresos del sector para sobrevivir y cuando los clientes enfrentan costes de cambio casi nulos. La concentración y la inexistencia de sucedáneos maximizan el poder del proveedor."
+          },
+          {
+            "id": 27,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) aquella(s) matriz(ces) o herramienta(s) analítica(s) que integra(n) el circuito metodológico del análisis estratégico avanzado del curso:",
+            "opciones": [
+              "Matriz FLOR (Fortalezas, Limitaciones, Oportunidades, Retos)",
+              "Matriz MIE (Matriz del Interés Estratégico / Matriz Interna-Externa)",
+              "Matriz MPC (Matriz del Perfil Competitivo)",
+              "Matriz PEYEA y Matriz BCG",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "El diagrama de matrices del curso integra formalmente en circuito continuo a: MGE, FLOR, MIE, MPC, PEYEA y BCG."
+          },
+          {
+            "id": 28,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En el caso aplicativo de la 'Empresa de Servicios Logísticos GUIGA', ¿cuál(es) de los siguientes factores fue(ron) evaluado(s) para su posicionamiento?",
+            "opciones": [
+              "Experiencia administrativa y técnica al brindar el servicio",
+              "Ventajas tecnológicas y competitividad de los precios",
+              "Calidad del servicio y cobertura nacional",
+              "Flexibilidad en los procesos de servicio y publicidad",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "La presentación del caso GUIGA lista explícitamente ocho variables competitivas: experiencia administrativa, técnica de servicio, ventajas tecnológicas, competitividad de precios, calidad, publicidad, cobertura nacional y flexibilidad de procesos."
+          },
+          {
+            "id": 29,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) el(los) elemento(s) que describe(n) formalmente a la 'Intención Estratégica' en el marco del planeamiento corporativo:",
+            "opciones": [
+              "El compromiso irrevocable de ganar en el ambiente competitivo",
+              "Una descripción detallada de los métodos contables de amortización",
+              "La liquidación forzosa de pasivos corrientes en menos de noventa días",
+              "El organigrama nominal de puestos subalternos de mantenimiento",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0
+            ],
+            "explicacion": "El texto teórico del curso define a la intención estratégica textualmente como el 'compromiso de ganar en el ambiente competitivo'."
+          },
+          {
+            "id": 30,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Cuál(es) de las siguientes interrogantes orienta(n) de manera específica la delimitación conceptual de la Misión de una empresa?",
+            "opciones": [
+              "¿Para qué existe esta organización en el contexto social en que se encuentra?",
+              "¿Cuál es nuestro negocio?",
+              "¿En qué negocio estoy?",
+              "¿Qué queremos llegar a ser en el futuro?",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2
+            ],
+            "explicacion": "La misión contesta para qué existe la empresa en la sociedad y '¿cuál es nuestro negocio? / ¿en qué negocio estoy?'. La pregunta '¿qué queremos llegar a ser?' concierne con exclusividad a la Visión corporativa."
+          },
+          {
+            "id": 31,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) el(los) efecto(s) psicológico(s) e institucional(es) que persigue la formulación efectiva de una Misión organizacional:",
+            "opciones": [
+              "Despertar sentimientos y emociones positivas en relación con la empresa",
+              "Generar la convicción de que la organización es exitosa y sabe con claridad a dónde se dirige",
+              "Transmitir la percepción de que la empresa es merecedora de apoyo, tiempo e inversión",
+              "Fomentar la subordinación irrestricta mediante medidas punitivas de personal",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2
+            ],
+            "explicacion": "La clase subraya que una misión efectiva despierta sentimientos y emociones, generando la impresión de que la organización sabe a dónde va y merece respaldo, tiempo e inversión de sus audiencias."
+          },
+          {
+            "id": 32,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En el marco del diagnóstico interno F-L (Fortalezas - Limitaciones), ¿qué representa el reconocimiento de los recursos organizacionales?",
+            "opciones": [
+              "Identificar el inventario de activos, capacidades y talento disponibles para formular estrategias",
+              "Asumir que todas las áreas funcionales de la empresa son homogéneamente fuertes",
+              "Ignorar las fallas operacionales para no comprometer el clima laboral",
+              "Eliminar la necesidad de coordinar entre las diferentes áreas funcionales",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0
+            ],
+            "explicacion": "El diagnóstico interno busca identificar los recursos de los cuales la organización dispone para evaluar sus fortalezas y limitaciones, entendiendo que ninguna empresa es igualmente fuerte ni débil en todas sus áreas."
+          },
+          {
+            "id": 33,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "¿Cuál(es) de las siguientes áreas representa(n) la letra 'H' y la letra 'I' en la matriz diagnóstica AMOFHIT?",
+            "opciones": [
+              "Hacienda pública e Infraestructura industrial",
+              "Higiene ocupacional e Inversión de cartera",
+              "Recursos Humanos y Sistemas de Información",
+              "Habilidades gerenciales e Importaciones",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              2
+            ],
+            "explicacion": "En el modelo funcional AMOFHIT de las clases, la letra H simboliza 'Recursos Humanos' (Human Resources) y la letra I simboliza 'Sistemas de Información'."
+          },
+          {
+            "id": 34,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Respecto a la formulación estratégica, ¿por qué se sostiene en cátedra que el planeamiento no debe operar como un flujo rígido de una sola vía descendente?",
+            "opciones": [
+              "Porque los niveles directivos carecen de potestad formal sobre las funciones operativas",
+              "Porque es un proceso interactivo que requiere una coordinación efectiva entre todas las áreas funcionales",
+              "Porque la empresa debe operar sin fijar metas ni presupuestos formales",
+              "Porque las regulaciones gubernamentales invalidan los planes institucionales",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              1
+            ],
+            "explicacion": "Las diapositivas remarcan que aunque tradicionalmente se visualiza como un flujo descendente de estrategias y políticas, el planeamiento es esencialmente un 'proceso interactivo que requiere la coordinación efectiva entre todas las áreas funcionales'."
+          },
+          {
+            "id": 35,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) aquella(s) variable(s) que compone(n) el análisis del entorno externo en el modelo O-R introducido en las clases:",
+            "opciones": [
+              "Oportunidades",
+              "Retos (o Riesgos)",
+              "Rendimientos marginales",
+              "Obligaciones societarias",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1
+            ],
+            "explicacion": "En las presentaciones del profesor, el análisis externo se sintetiza bajo la nomenclatura O-R, correspondiente a Oportunidades y Retos (o Riesgos), emparejado con el análisis interno F-L (Fortalezas y Limitaciones)."
+          },
+          {
+            "id": 36,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "De acuerdo con el enfoque del profesor Michael Porter, ¿qué función estratégica cumple el análisis de la estructura de una industria?",
+            "opciones": [
+              "Calcular de manera automática el devengado impositivo mensual",
+              "Evaluar el atractivo intrínseco del sector y determinar la posición de la compañía dentro de él",
+              "Sustituir por completo la toma de decisiones por algoritmos determinísticos cerrados",
+              "Garantizar la desaparición de rivales comerciales sin necesidad de inversión",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              1
+            ],
+            "explicacion": "Porter establece que la formulación estratégica requiere analizar el atractivo del sector industrial y la posición competitiva que la empresa ocupa o busca ocupar dentro de él."
+          },
+          {
+            "id": 37,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) el(los) componente(s) transversal(es) que establece(n) el clima organizacional y orienta(n) los límites conductuales de la estrategia corporativa:",
+            "opciones": [
+              "Orientación y valores",
+              "Gráficas de ruta crítica PERT",
+              "Asiento de ajuste contable",
+              "Balance general semestral",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0
+            ],
+            "explicacion": "La teoría revisada en el Capítulo 5 y las clases señala expresamente que la orientación y los valores institucionales establecen el clima organizacional y definen la dirección ética y estratégica de la compañía."
+          },
+          {
+            "id": 38,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Dentro de la arquitectura estratégica de la empresa, ¿cuál(es) etapa(s) se desarrolla(n) una vez concluido el análisis interno F-L y externo O-R?",
+            "opciones": [
+              "Formulación, validación y selección de objetivos estratégicos",
+              "Alineamiento y presentación final de objetivos estratégicos",
+              "Diseño e implantación del Balanced Scorecard",
+              "Liquidación voluntaria de activos fijos",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2
+            ],
+            "explicacion": "El diagrama metodológico sitúa inmediatamente después de los diagnósticos F-L y O-R a la formulación/selección de objetivos, su posterior alineamiento y su ejecución mediante el BSC."
+          },
+          {
+            "id": 39,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "En el análisis de las cinco fuerzas competitivas, ¿cuál(es) es(son) factor(es) que intensifica(n) de manera directa la 'Rivalidad entre los competidores existentes'?",
+            "opciones": [
+              "Gran número de competidores de igual tamaño o poder de mercado",
+              "Crecimiento lento o estancamiento de la demanda en el sector industrial",
+              "Falta de diferenciación en los productos comercializados",
+              "Elevadas barreras de salida que retienen a empresas no rentables",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "explicacion": "La rivalidad competitiva en el centro del modelo de Porter se exacerba cuando existen muchos competidores equilibrados, escaso crecimiento de mercado, productos comoditizados y altas barreras para abandonar la industria."
+          },
+          {
+            "id": 40,
+            "categoria": "Ingeniería Administrativa",
+            "pregunta": "Es(son) considerado(s) un propósito central de implementar la 'Gestión por Competencias' dentro del modelo estratégico de la organización:",
+            "opciones": [
+              "Alinear las conductas y habilidades individuales del personal con la ejecución efectiva de la estrategia",
+              "Uniformizar artificialmente los salarios con independencia del rendimiento obtenido",
+              "Sustituir el análisis de las fuerzas macroambientales del PESTE",
+              "Eliminar formalmente todos los puestos de nivel de supervisión",
+              "Ninguna de las anteriores"
+            ],
+            "respuestasCorrectas": [
+              0
+            ],
+            "explicacion": "En el esquema del Sistema de Gestión Estratégica, la cultura de ejecución sustentada en competencias busca que el capital humano desarrolle las destrezas requeridas para materializar los objetivos estratégicos."
           }
         ]
       },
